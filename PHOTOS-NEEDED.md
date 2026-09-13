@@ -57,6 +57,19 @@ from that same client-supplied folder:
 camp photos (see "Real content migrated from the old site" below). No
 longer needs replacing, unless the church wants a more recent one.
 
+## Pray for Ukraine section — sourced photo
+
+`/public/photos/pray-for-ukraine.jpg` (2026-09-13) — a real sunflower
+field under a blue sky, Poltava region, Ukraine, 2015, by Gennadiy Burda
+via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D0%B5_%D0%BF%D0%BE%D0%B4%D1%81%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%B0,%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,2015%D0%B3.JPG),
+**CC BY-SA 4.0 — requires attribution**, credited in a small corner link
+on the section (same pattern as the home hero). Chosen deliberately over
+a literal flag graphic: it's Ukraine's national flower under a blue sky,
+a real documentary photo rather than a symbol pasted on, consistent with
+how the rest of the site avoids literal flag colors. Client asked to
+"find a suitable photo online" for this section, no specific photo
+supplied.
+
 ## Client-supplied folder `public/photos/фото української церкви/` — 2026-09-13
 
 The client added this folder directly to the project (not via Downloads)

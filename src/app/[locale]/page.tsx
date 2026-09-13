@@ -11,6 +11,8 @@ import {
   ui,
   affiliation,
   upcomingEvents,
+  buildingFund,
+  prayForUkraine,
   type Locale,
 } from "../../../content/church";
 import RushnykDivider from "../../components/RushnykDivider";
@@ -232,6 +234,65 @@ export default async function HomePage({
             {mission[locale]}
           </p>
           <div className="mx-auto mt-8 h-px w-16 bg-amber" />
+        </div>
+      </section>
+
+      {/* Building fund */}
+      <section className="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+        <div className="flex flex-col items-start gap-8 rounded-3xl bg-wheat-soft p-8 ring-1 ring-charcoal/5 sm:flex-row sm:items-center sm:p-12">
+          <div className="flex-1">
+            <p className="font-body text-xs font-bold tracking-[0.15em] text-poppy">
+              {locale === "uk" ? "СЛУЖІННЯ" : "STEWARDSHIP"}
+            </p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-ink sm:text-3xl">
+              {buildingFund.heading[locale]}
+            </h2>
+            <p className="mt-3 max-w-xl text-charcoal/75">{buildingFund.body[locale]}</p>
+          </div>
+          <Link
+            href={`${base}/give`}
+            className="shrink-0 rounded-full bg-amber px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-amber-soft"
+          >
+            {ui.nav.give[locale]}
+          </Link>
+        </div>
+      </section>
+
+      {/* Pray for Ukraine */}
+      <section className="relative h-[46vh] min-h-[320px] w-full overflow-hidden">
+        <Image
+          src="/photos/pray-for-ukraine.jpg"
+          alt={
+            locale === "uk"
+              ? "Поле соняшників під синім небом, Полтавська область, Україна"
+              : "A sunflower field under a blue sky, Poltava region, Ukraine"
+          }
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-ink/70" />
+        <a
+          href="https://commons.wikimedia.org/wiki/File:%D0%9F%D0%BE%D0%BB%D0%B5_%D0%BF%D0%BE%D0%B4%D1%81%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%B0,%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0,2015%D0%B3.JPG"
+          target="_blank"
+          rel="noreferrer"
+          className="absolute right-3 top-3 z-10 text-[10px] text-wheat/50 hover:text-wheat/80"
+        >
+          Photo: Gennadiy Burda / Wikimedia Commons (CC BY-SA 4.0)
+        </a>
+        <div className="relative mx-auto flex h-full max-w-3xl flex-col items-center justify-center px-5 text-center">
+          <h2 className="font-display text-3xl font-semibold text-wheat sm:text-4xl">
+            {prayForUkraine.heading[locale]}
+          </h2>
+          <p className="mt-4 max-w-xl text-wheat/85">{prayForUkraine.body[locale]}</p>
+          <a
+            href={prayForUkraine.linkUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 text-sm font-semibold text-amber-soft underline decoration-2 underline-offset-4"
+          >
+            {prayForUkraine.linkLabel[locale]}
+          </a>
         </div>
       </section>
 

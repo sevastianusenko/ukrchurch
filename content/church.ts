@@ -47,6 +47,31 @@ export const giving = {
   zelleHandle: "ukrchurchlancaster",
 };
 
+// The church currently rents its space and is raising funds toward
+// buying a building of its own. Confirmed by the client 2026-09-13; also
+// consistent with a prayer request in the real 2026-08-30 bulletin about
+// "completing the agreement for the purchase of the house of prayer."
+// No specific goal amount or deadline was given, so none is stated here.
+export const buildingFund = {
+  heading: { uk: "Наш власний дім молитви", en: "A House of Prayer of Our Own" } satisfies Bi,
+  body: {
+    uk: "Сьогодні ми орендуємо приміщення для богослужінь. Ми віримо, що Бог веде нашу громаду до власного дому молитви, і збираємо кошти на цю мету. Долучіться до цієї важливої справи своєю пожертвою.",
+    en: "Right now, we rent the space where we worship. We believe God is leading our congregation toward a building of our own, and we're raising funds toward that goal. Join us in this important work with your gift.",
+  } satisfies Bi,
+};
+
+// Ongoing prayer emphasis, not tied to one dated event (see the real
+// 2026-08 World Prayer for Ukraine post for a specific past occasion).
+export const prayForUkraine = {
+  heading: { uk: "Моліться за Україну", en: "Pray for Ukraine" } satisfies Bi,
+  body: {
+    uk: "Війна триває, і наша громада продовжує молитися за мир, за наш народ і за перемогу України. Приєднуйтесь до нас у молитві.",
+    en: "The war continues, and our congregation keeps praying for peace, for our people, and for Ukraine's victory. Join us in prayer.",
+  } satisfies Bi,
+  linkUrl: "https://prayforukraine.org.ua/ua",
+  linkLabel: { uk: "prayforukraine.org.ua", en: "prayforukraine.org.ua" } satisfies Bi,
+};
+
 export type ScheduleItem = {
   day: Bi;
   time: string;

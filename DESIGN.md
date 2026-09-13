@@ -22,7 +22,8 @@ website.
 
 | Token | Hex | Use |
 |---|---|---|
-| `wheat` | `#F6EFE3` | Primary light background — warm, not the cliché stark cream |
+| `wheat` | `#F6F6F4` | Primary light background — neutral, near-white (changed 2026-09-13 from a warm cream `#F6EFE3` at the client's request; token name kept for minimal diff even though it's no longer literally wheat-toned) |
+| `wheat-soft` | `#FFFFFF` | Card/surface background, pure white |
 | `charcoal` | `#2A2622` | Body text, warm near-black (never pure `#000`) |
 | `ink` | `#1E2440` | Deep indigo — dark sections (footer, Beliefs page hero, the "30% conservative" anchor) |
 | `amber` | `#E28C2B` | Primary accent — CTAs, links, active nav state ("70% youthful" warmth) |

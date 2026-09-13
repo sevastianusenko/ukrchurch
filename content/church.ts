@@ -80,15 +80,12 @@ export const schedule: ScheduleItem[] = [
   },
 ];
 
-// The client asked for a real Google Calendar embed (2026-09-13), like one
-// that may have existed on an earlier version of the site. No calendar
-// ID/link has been supplied yet — see OPEN-QUESTIONS.md. Once you have it
-// (Google Calendar → Settings → that calendar → "Integrate calendar" →
-// either the "Public URL" or the calendar ID, which looks like
-// `something@group.calendar.google.com`), set embedUrl to:
-// `https://calendar.google.com/calendar/embed?src=<calendar-id>&ctz=America%2FNew_York`
+// Real embed URL supplied by the client 2026-09-13. Note its timezone is
+// America/Indiana/Vincennes (an Eastern-observing zone), not
+// America/New_York — passed through as given, not corrected.
 export const googleCalendar: { embedUrl: string | null } = {
-  embedUrl: null,
+  embedUrl:
+    "https://calendar.google.com/calendar/embed?src=ea3f3b5604b8d55a7b9bc546da9d359c38d522fbf2fa690a43eda888b759aa90%40group.calendar.google.com&ctz=America%2FIndiana%2FVincennes",
 };
 
 export type UpcomingEvent = {

@@ -53,8 +53,8 @@ export default async function HomePage({
             src="/photos/hero.jpg"
             alt={
               locale === "uk"
-                ? "Наша громада на благодійному ярмарку випічки"
-                : "Our congregation at the charity bake sale"
+                ? "Діти нашої церкви на дитячому таборі"
+                : "Kids from our church at summer camp"
             }
             fill
             priority

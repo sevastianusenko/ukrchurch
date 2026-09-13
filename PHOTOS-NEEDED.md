@@ -14,11 +14,14 @@ Last updated: 2026-09-13. Source: StockSnap.io (CC0 / public domain, no
 attribution legally required — original StockSnap URLs kept below for
 traceability only).
 
-**Home hero — now a real photo.** Swapped 2026-09-13 from a stock wheat
-photo to `bake-sale-recap-2025`'s hero (full-resolution 1600×900 original
-pulled from `ukrlancaster.church`, not the 1024×576 thumbnail used on
-that news post) — real church members, several in vyshyvanka, at the
-charity bake sale. No longer needs replacing.
+**Home hero — now a real photo.** First swapped 2026-09-13 from a stock
+wheat photo to `bake-sale-recap-2025`'s hero, then swapped again the same
+day at the client's request for something more "neutral" (the client
+also asked to remove the beige/cream background sitewide — see
+`globals.css`, `DESIGN.md`). Now uses `kids-camp-2026-recap/6.jpg` (real
+kids playing soccer at the June 2026 camp, 2000×1500, cool/neutral
+daylight tones — not warm-toned like the bake-sale or wheat options). No
+longer needs replacing.
 
 | File | Used on | Shows | Real photo needed |
 |---|---|---|---|

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --color-wheat: #f6efe3;
-  --color-wheat-soft: #fbf7ef;
+  /* Neutral light surfaces (not beige/cream) — see OPEN-QUESTIONS.md */
+  --color-wheat: #f6f6f4;
+  --color-wheat-soft: #ffffff;
   --color-charcoal: #2a2622;
   --color-ink: #1e2440;
   --color-ink-soft: #2b3358;

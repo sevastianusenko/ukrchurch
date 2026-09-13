@@ -46,7 +46,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <ul className="mt-3 space-y-1.5 text-sm text-wheat/80">
               {schedule.map((s) => (
                 <li key={s.day.en}>
-                  <span className="text-wheat">{s.day[locale]}</span> — {s.time} {s.label[locale]}
+                  <span className="text-wheat">{s.day[locale]}</span> · {s.time} {s.label[locale]}
                 </li>
               ))}
             </ul>

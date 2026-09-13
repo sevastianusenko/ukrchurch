@@ -19,8 +19,8 @@ export const site = {
     en: "UEBC Lancaster",
   } satisfies Bi,
   tagline: {
-    uk: "Дім для української громади Ланкастера — у Слові, молитві й спільноті.",
-    en: "A home for Lancaster's Ukrainian community — in the Word, in prayer, in community.",
+    uk: "Дім для української громади Ланкастера, у Слові, молитві й спільноті.",
+    en: "A home for Lancaster's Ukrainian community, in the Word, in prayer, in community.",
   } satisfies Bi,
 };
 
@@ -127,8 +127,8 @@ export const annualEvents: AnnualEvent[] = [
     season: { uk: "ЛІТО", en: "SUMMER" },
     title: { uk: "Дитячий табір", en: "Kids Camp" },
     description: {
-      uk: "Одноденний християнський табір для дітей — ігри, майстер-класи, водна гірка та біблійні історії.",
-      en: "A one-day Christian camp for kids — games, crafts, a water slide, and Bible stories.",
+      uk: "Одноденний християнський табір для дітей: ігри, майстер-класи, водна гірка та біблійні історії.",
+      en: "A one-day Christian camp for kids: games, crafts, a water slide, and Bible stories.",
     },
     postSlug: "kids-camp-2025",
   },
@@ -136,8 +136,8 @@ export const annualEvents: AnnualEvent[] = [
     season: { uk: "ВЕРЕСЕНЬ", en: "SEPTEMBER" },
     title: { uk: "Свято Жнив", en: "Harvest Festival" },
     description: {
-      uk: "Святкове богослужіння подяки за врожай — 2025 року відзначили ще й 20-річчя церкви.",
-      en: "A festive service of thanksgiving for the harvest — in 2025 it doubled as the church's 20th anniversary.",
+      uk: "Святкове богослужіння подяки за врожай. 2025 року відзначили ще й 20-річчя церкви.",
+      en: "A festive service of thanksgiving for the harvest. In 2025 it doubled as the church's 20th anniversary.",
     },
     postSlug: "harvest-festival-2026",
   },
@@ -145,8 +145,8 @@ export const annualEvents: AnnualEvent[] = [
     season: { uk: "ЛИСТОПАД", en: "NOVEMBER" },
     title: { uk: "Благодійний Bake Sale", en: "Charity Bake Sale" },
     description: {
-      uk: "Український ярмарок домашньої випічки — кошти йдуть на допомогу людям в Україні.",
-      en: "A Ukrainian homemade-baking sale — proceeds go toward helping people in Ukraine.",
+      uk: "Український ярмарок домашньої випічки. Кошти йдуть на допомогу людям в Україні.",
+      en: "A Ukrainian homemade-baking sale. Proceeds go toward helping people in Ukraine.",
     },
     postSlug: "bake-sale-invite-2025",
   },
@@ -163,8 +163,8 @@ export const annualEvents: AnnualEvent[] = [
     season: { uk: "31 ГРУДНЯ", en: "DECEMBER 31" },
     title: { uk: "Новорічна ніч", en: "New Year's Eve" },
     description: {
-      uk: "Спільна зустріч Нового року — слово пасторів, молитва благословення і святковий стіл.",
-      en: "A shared New Year's gathering — a word from the pastors, a prayer of blessing, and a holiday table.",
+      uk: "Спільна зустріч Нового року: слово пасторів, молитва благословення і святковий стіл.",
+      en: "A shared New Year's gathering: a word from the pastors, a prayer of blessing, and a holiday table.",
     },
     postSlug: "new-year-2026",
   },
@@ -179,13 +179,13 @@ export const verse = {
 };
 
 export const whoWeAre = {
-  uk: "Ми є прості люди, які зрозуміли, що, бувши грішниками, нам потрібен Спаситель. І цим Спасителем для нас є Ісус Христос. Він помер за гріх цього світу, і тепер кожному, хто прийме Його через віру, Він дає спасіння від рабства гріха. Ми віримо, що Біблія — це Слово Боже, і ця книга є для нас авторитетом у житті.",
-  en: "We are ordinary people who came to understand that, being sinners, we needed a Savior — and that Savior is Jesus Christ. He died for the sin of this world, and now gives salvation from the slavery of sin to everyone who receives Him through faith. We believe the Bible is the Word of God, and that this book is the authority for our lives.",
+  uk: "Ми є прості люди, які зрозуміли, що, бувши грішниками, нам потрібен Спаситель. І цим Спасителем для нас є Ісус Христос. Він помер за гріх цього світу, і тепер кожному, хто прийме Його через віру, Він дає спасіння від рабства гріха. Ми віримо, що Біблія це Слово Боже, і ця книга є для нас авторитетом у житті.",
+  en: "We are ordinary people who came to understand that, being sinners, we needed a Savior, and that Savior is Jesus Christ. He died for the sin of this world, and now gives salvation from the slavery of sin to everyone who receives Him through faith. We believe the Bible is the Word of God, and that this book is the authority for our lives.",
 } satisfies Bi;
 
 export const mission = {
-  uk: "Наша місія — зростати в благодаті та пізнанні Господа й Спасителя нашого Ісуса Христа: служити так, як служив Христос, любити так, як любив Христос, і бути сіллю та світлом у цьому темному й позбавленому смаку світі.",
-  en: "Our mission is to grow in the grace and knowledge of our Lord and Savior Jesus Christ — to serve as Christ served, to love as Christ loved, and to be salt and light in a dark and tasteless world.",
+  uk: "Наша місія це зростати в благодаті та пізнанні Господа й Спасителя нашого Ісуса Христа: служити так, як служив Христос, любити так, як любив Христос, і бути сіллю та світлом у цьому темному й позбавленому смаку світі.",
+  en: "Our mission is to grow in the grace and knowledge of our Lord and Savior Jesus Christ: to serve as Christ served, to love as Christ loved, and to be salt and light in a dark and tasteless world.",
 } satisfies Bi;
 
 // First names from a real 2026 New Year's post (Viktor, Leonid, Kyrylo
@@ -220,7 +220,7 @@ export const values: Value[] = [
   {
     title: { uk: "Хто ми", en: "Who we are" },
     body: {
-      uk: "Ми — українська євангельська баптистська церква в Ланкастері.",
+      uk: "Ми українська євангельська баптистська церква в Ланкастері.",
       en: "We are a Ukrainian Evangelical Baptist church in Lancaster.",
     },
   },
@@ -241,15 +241,15 @@ export const values: Value[] = [
   {
     title: { uk: "Наш фундамент", en: "Our foundation" },
     body: {
-      uk: "Вивчення Божого Слова — основа нашого зростання.",
+      uk: "Вивчення Божого Слова є основою нашого зростання.",
       en: "Studying God's Word is the foundation of our growth.",
     },
   },
   {
     title: { uk: "Для кожного", en: "For everyone" },
     body: {
-      uk: "Діти, молодь, дорослі — кожен має місце в тілі Христовому.",
-      en: "Children, youth, adults — everyone has a place in the body of Christ.",
+      uk: "Діти, молодь, дорослі: кожен має місце в тілі Христовому.",
+      en: "Children, youth, adults: everyone has a place in the body of Christ.",
     },
   },
 ];
@@ -267,7 +267,7 @@ export const ministries: Ministry[] = [
     slug: "worship",
     title: { uk: "Недільне богослужіння", en: "Sunday Worship" },
     description: {
-      uk: "Щонеділі о 14:00 ми збираємось на спільне поклоніння українською та англійською мовами — з хоровим і сучасним прославленням.",
+      uk: "Щонеділі о 14:00 ми збираємось на спільне поклоніння українською та англійською мовами, з хоровим і сучасним прославленням.",
       en: "Every Sunday at 2:00 PM we gather for worship in Ukrainian and English, with choir and contemporary praise.",
     },
     photo: "/photos/worship.jpg",
@@ -280,8 +280,8 @@ export const ministries: Ministry[] = [
     slug: "sunday-school",
     title: { uk: "Недільна школа", en: "Sunday School" },
     description: {
-      uk: "Поки дорослі — на богослужінні, діти вивчають Слово Боже у групах за віком, через історії, пісні та творчість.",
-      en: "While the adults worship, children learn God's Word in age-based groups — through stories, songs, and hands-on activities.",
+      uk: "Поки дорослі на богослужінні, діти вивчають Слово Боже у групах за віком, через історії, пісні та творчість.",
+      en: "While the adults worship, children learn God's Word in age-based groups, through stories, songs, and hands-on activities.",
     },
     photo: "/photos/sunday-school.jpg",
     alt: { uk: "Діти на уроці недільної школи", en: "Kids in Sunday school class" },
@@ -300,7 +300,7 @@ export const ministries: Ministry[] = [
     slug: "prayer-groups",
     title: { uk: "Молитовні та домашні групи", en: "Prayer & Home Groups" },
     description: {
-      uk: "У вівторок о 20:00 — спільна молитва через Zoom, а протягом тижня — домашні групи для ближчого спілкування.",
+      uk: "У вівторок о 20:00 спільна молитва через Zoom, а протягом тижня домашні групи для ближчого спілкування.",
       en: "Tuesdays at 8:00 PM we pray together over Zoom, and through the week our home groups meet for closer fellowship.",
     },
     photo: "/photos/prayer.jpg",
@@ -310,8 +310,8 @@ export const ministries: Ministry[] = [
     slug: "bible-study",
     title: { uk: "Вивчення Слова Божого", en: "Bible Study" },
     description: {
-      uk: "У четвер о 20:00 ми разом розбираємо Слово Боже — глибше пізнання Писання для щоденного життя.",
-      en: "Thursdays at 8:00 PM we study God's Word together — going deeper into Scripture for everyday life.",
+      uk: "У четвер о 20:00 ми разом розбираємо Слово Боже, глибше пізнаючи Писання для щоденного життя.",
+      en: "Thursdays at 8:00 PM we study God's Word together, going deeper into Scripture for everyday life.",
     },
     photo: "/photos/bible-study.jpg",
     alt: { uk: "Групове вивчення Біблії", en: "Group Bible study" },
@@ -321,7 +321,7 @@ export const ministries: Ministry[] = [
     title: { uk: "Дитячий табір і Біблійна вакаційна школа", en: "Kids Camp & Vacation Bible School" },
     description: {
       uk: "Через ігри, творчість, водну гірку та біблійні історії діти не тільки розважаються, а й відчувають Божу любов та турботу.",
-      en: "Through games, crafts, a water slide, and Bible stories, kids don't just have fun — they experience God's love and care.",
+      en: "Through games, crafts, a water slide, and Bible stories, kids don't just have fun. They experience God's love and care.",
     },
     photo: "/photos/news/kids-camp-2025/hero.jpg",
     alt: { uk: "Діти на нашому дитячому таборі", en: "Kids at our own kids camp" },
@@ -345,11 +345,11 @@ export const statementOfFaith: FaithArticle[] = [
     paragraphs: [
       {
         uk: "Ми віримо, що Біблія є Богом натхненна книга в її канонічній формі. Вона є єдиним досконалим джерелом для навчання, докору, направи та виховання в праведності.",
-        en: "We believe the Bible, in its canonical form, is a God-breathed book — the one perfect source for teaching, reproof, correction, and training in righteousness.",
+        en: "We believe the Bible, in its canonical form, is a God-breathed book, the one perfect source for teaching, reproof, correction, and training in righteousness.",
       },
       {
-        uk: "Ми віримо, що те, що говорить Біблія, те каже Бог, тому весь її багатогранний вміст — історія, пророцтва, поезія, пісні, мудрість, проповіді, листи та все інше — повинно прийматися, як від Бога.",
-        en: "What the Bible says, God says — so its entire many-sided content: history, prophecy, poetry, song, wisdom, sermon, and letter, is to be received as from God.",
+        uk: "Ми віримо, що те, що говорить Біблія, те каже Бог, тому весь її багатогранний вміст (історія, пророцтва, поезія, пісні, мудрість, проповіді, листи та все інше) повинно прийматися, як від Бога.",
+        en: "What the Bible says, God says. So its entire many-sided content: history, prophecy, poetry, song, wisdom, sermon, and letter, is to be received as from God.",
       },
     ],
     refs: "2 Tim. 3:16; Rom. 15:4; 2 Pet. 1:19-21; Heb. 4:12",
@@ -360,11 +360,11 @@ export const statementOfFaith: FaithArticle[] = [
     paragraphs: [
       {
         uk: "Ми віримо в Єдиного Живого Бога. Бог є вічний, всюдиприсутній, досконалий і відкритий нам у Біблії, як Один у трьох особах: Отець, Син і Дух Святий. Кожна Особа Трійці володіє усією сукупністю божественних рис.",
-        en: "We believe in the one living God — eternal, everywhere present, perfect, and revealed to us in the Bible as one in three persons: Father, Son, and Holy Spirit. Each person of the Trinity holds the full sum of the divine attributes.",
+        en: "We believe in the one living God. He is eternal, everywhere present, perfect, and revealed to us in the Bible as one in three persons: Father, Son, and Holy Spirit. Each person of the Trinity holds the full sum of the divine attributes.",
       },
       {
-        uk: "Триєдиний Бог у Своєму єстві та властивостях рівний та нероздільний, так що Отець — Бог, Син — Бог і Дух Святий — Бог, але не три Боги, а Один Бог.",
-        en: "The triune God, in nature and attributes, is equal and undivided — the Father is God, the Son is God, and the Holy Spirit is God, yet not three Gods but one God.",
+        uk: "Триєдиний Бог у Своєму єстві та властивостях рівний та нероздільний, так що Отець є Бог, Син є Бог і Дух Святий є Бог, але не три Боги, а Один Бог.",
+        en: "The triune God, in nature and attributes, is equal and undivided. The Father is God, the Son is God, and the Holy Spirit is God, yet not three Gods but one God.",
       },
     ],
     refs: "1 John 5:7; Luke 3:21-22; Jer. 10:10",
@@ -445,8 +445,8 @@ export const statementOfFaith: FaithArticle[] = [
         en: "Salvation requires repentance and the sinner's turning to God. Salvation is accomplished by God, by grace, through faith in the atoning sacrifice of Jesus Christ.",
       },
       {
-        uk: "Ми віримо, що спасенна людина є народжена згори від Духа Святого і Слова Божого — вона воскресла з її мертвого духовного стану і народилась для нового життя.",
-        en: "The saved person is born from above, of the Holy Spirit and the Word of God — raised out of spiritual death and born again to new life.",
+        uk: "Ми віримо, що спасенна людина є народжена згори від Духа Святого і Слова Божого. Вона воскресла з її мертвого духовного стану і народилась для нового життя.",
+        en: "The saved person is born from above, of the Holy Spirit and the Word of God, raised out of spiritual death and born again to new life.",
       },
       {
         uk: "Ми віримо, що людина виправдовується вірою в Ісуса Христа.",
@@ -457,8 +457,8 @@ export const statementOfFaith: FaithArticle[] = [
         en: "God adopts the redeemed and justified as His own, and they become heirs of the Kingdom of God.",
       },
       {
-        uk: "Ми віримо, що Бог потурбувався про освячення Своїх дітей — це є Його волею. Освячення — це відокремлення від гріха і присвячення себе Богові. Освячення починається з дня навернення і продовжується все життя.",
-        en: "God has provided for the sanctification of His children — it is His will. Sanctification is separation from sin and dedication of oneself to God; it begins on the day of conversion and continues for life.",
+        uk: "Ми віримо, що Бог потурбувався про освячення Своїх дітей. Це є Його волею. Освячення це відокремлення від гріха і присвячення себе Богові. Освячення починається з дня навернення і продовжується все життя.",
+        en: "God has provided for the sanctification of His children. It is His will. Sanctification is separation from sin and dedication of oneself to God; it begins on the day of conversion and continues for life.",
       },
     ],
     refs: "Eph. 2:8; Luke 13:3; Ezek. 18:31-32; Mark 1:15, 16:16; Acts 3:19; John 3:16; John 3:3-7; Eph. 2:5; Col. 2:13; Rom. 3:24-28; Rom. 8:16-18; Gal. 3:26; Eph. 1:3-6; Acts 20:32; 1 Thess. 4:3, 4:7; Heb. 10:10; Rom. 12:1-3; Rev. 22:11",
@@ -483,7 +483,7 @@ export const statementOfFaith: FaithArticle[] = [
     title: { uk: "Хрищення", en: "Baptism" },
     paragraphs: [
       {
-        uk: "Ми віримо, що євангельське хрищення по вірі — це заповідь Ісуса Христа. Хрищення є актом послуху і свідченням віри людини в розп'ятого, похованого і воскреслого Спасителя, а також прообразом смерті віруючого для гріха і воскресіння для нового життя в Ісусі Христі.",
+        uk: "Ми віримо, що євангельське хрищення по вірі це заповідь Ісуса Христа. Хрищення є актом послуху і свідченням віри людини в розп'ятого, похованого і воскреслого Спасителя, а також прообразом смерті віруючого для гріха і воскресіння для нового життя в Ісусі Христі.",
         en: "Believer's baptism by faith is a command of Jesus Christ. Baptism is an act of obedience and a testimony of a person's faith in the crucified, buried, and risen Savior, and a picture of the believer's death to sin and resurrection to new life in Jesus Christ.",
       },
       {
@@ -498,7 +498,7 @@ export const statementOfFaith: FaithArticle[] = [
     title: { uk: "Вечеря Господня", en: "The Lord's Supper" },
     paragraphs: [
       {
-        uk: "Ми віримо, що Вечеря Господня — це заповідь Господа нашого Ісуса Христа, яка встановлена для того, щоб згадувати та звіщати смерть Господню, аж доки Він прийде. Вона виражає єднання віруючих з Христом та один з одним.",
+        uk: "Ми віримо, що Вечеря Господня це заповідь Господа нашого Ісуса Христа, яка встановлена для того, щоб згадувати та звіщати смерть Господню, аж доки Він прийде. Вона виражає єднання віруючих з Христом та один з одним.",
         en: "The Lord's Supper is a command of our Lord Jesus Christ, given so that we remember and proclaim the Lord's death until He comes. It expresses the union of believers with Christ and with one another.",
       },
       {
@@ -510,11 +510,11 @@ export const statementOfFaith: FaithArticle[] = [
   },
   {
     number: 12,
-    title: { uk: "Неділя — день Господній", en: "Sunday, the Lord's Day" },
+    title: { uk: "Неділя, день Господній", en: "Sunday, the Lord's Day" },
     paragraphs: [
       {
-        uk: "Ми віримо, що Ісус Христос воскрес у перший день тижня — неділю. Цей день звіщає про перемогу нашого Відкупителя та майбутнє воскресіння всіх людей.",
-        en: "We believe Jesus Christ rose on the first day of the week — Sunday. This day proclaims the victory of our Redeemer and the future resurrection of all people.",
+        uk: "Ми віримо, що Ісус Христос воскрес у перший день тижня, неділю. Цей день звіщає про перемогу нашого Відкупителя та майбутнє воскресіння всіх людей.",
+        en: "We believe Jesus Christ rose on the first day of the week, Sunday. This day proclaims the victory of our Redeemer and the future resurrection of all people.",
       },
       {
         uk: "Ми визнаємо неділю як особливий день, в який Церква збирається для спільного поклоніння Богу і для вивчення Слова Божого.",
@@ -532,8 +532,8 @@ export const statementOfFaith: FaithArticle[] = [
         en: "We believe Christ will soon come to earth a second time, in power and glory. No one knows the day or the hour of His coming except God the Father.",
       },
       {
-        uk: "Другий прихід нашого Господа Ісуса Христа включатиме в себе невидиме для світу підхоплення Церкви та видимий прихід Його в День Господній, який ознаменується судом над людством. Після суду настане вічність, яка для одних буде безкінечним блаженством з Христом, а для інших — вічними муками в озері огняному. Святе Писання вказує на неможливість переходу у вічності з одного місця в інше.",
-        en: "The second coming of our Lord Jesus Christ includes a catching-away of the church, unseen by the world, and His visible coming on the Day of the Lord, which will bring judgment on humanity. After judgment comes eternity — for some, unending blessedness with Christ; for others, everlasting torment in the lake of fire. Scripture teaches there is no passing from one of these eternal states to the other.",
+        uk: "Другий прихід нашого Господа Ісуса Христа включатиме в себе невидиме для світу підхоплення Церкви та видимий прихід Його в День Господній, який ознаменується судом над людством. Після суду настане вічність, яка для одних буде безкінечним блаженством з Христом, а для інших, вічними муками в озері огняному. Святе Писання вказує на неможливість переходу у вічності з одного місця в інше.",
+        en: "The second coming of our Lord Jesus Christ includes a catching-away of the church, unseen by the world, and His visible coming on the Day of the Lord, which will bring judgment on humanity. After judgment comes eternity, for some unending blessedness with Christ; for others, everlasting torment in the lake of fire. Scripture teaches there is no passing from one of these eternal states to the other.",
       },
     ],
     refs: "Matt. 24:36-44, 25:31-34,46; Acts 1:11; Luke 16:26",
@@ -543,19 +543,19 @@ export const statementOfFaith: FaithArticle[] = [
     title: { uk: "Шлюб і сім'я", en: "Marriage and Family" },
     paragraphs: [
       {
-        uk: "Ми віримо, що шлюб встановлений Богом і є союзом між чоловіком і жінкою. За Святим Письмом, чоловік може мати тільки одну дружину, а дружина — тільки одного чоловіка. У випадку смерті чоловіка чи дружини Слово Боже не забороняє тому, хто залишився, вступати в шлюб. Згідно Божої настанови, відроджені віруючі вступають до шлюбу тільки в Господі.",
+        uk: "Ми віримо, що шлюб встановлений Богом і є союзом між чоловіком і жінкою. За Святим Письмом, чоловік може мати тільки одну дружину, а дружина, тільки одного чоловіка. У випадку смерті чоловіка чи дружини Слово Боже не забороняє тому, хто залишився, вступати в шлюб. Згідно Божої настанови, відроджені віруючі вступають до шлюбу тільки в Господі.",
         en: "Marriage is instituted by God as a union between a man and a woman. According to Scripture, a man may have only one wife and a wife only one husband. If a husband or wife dies, God's Word does not forbid the one who remains from marrying again. In keeping with God's instruction, born-again believers marry only \"in the Lord.\"",
       },
       {
         uk: "Ми віримо, що Господь наказує не розлучатись тим, хто вступив у шлюб. Слово Боже дозволяє розлучення тільки за провиною перелюбу. Шлюб є установою Божою і громадською, тому отримується шляхом Слова Божого і молитви, а також здійснюється за державними законами. Шлюбний союз між особами однієї статі є гріхом і заборонений Словом Божим.",
-        en: "The Lord commands that those who marry not divorce. God's Word permits divorce only on the grounds of adultery. Marriage is both a divine and a civil institution — entered through God's Word and prayer, and carried out according to the laws of the state. Marriage between persons of the same sex is sin and is forbidden by God's Word.",
+        en: "The Lord commands that those who marry not divorce. God's Word permits divorce only on the grounds of adultery. Marriage is both a divine and a civil institution, entered through God's Word and prayer, and carried out according to the laws of the state. Marriage between persons of the same sex is sin and is forbidden by God's Word.",
       },
       {
         uk: "Ми визнаємо, що дошлюбні статеві стосунки є гріхом і засуджуються Словом Божим.",
         en: "We hold that sexual relations before marriage are sin and are condemned by God's Word.",
       },
       {
-        uk: "Людина, яка навернулась до Бога, повинна привести свої шлюбні стосунки у відповідність із Словом Божим: якщо на момент покаяння вона була розлучена — примиритись і відновити сім'ю, якщо це можливо; якщо була у повторному шлюбі — не розлучатись; якщо була у незаконному шлюбі — узаконити його.",
+        uk: "Людина, яка навернулась до Бога, повинна привести свої шлюбні стосунки у відповідність із Словом Божим: якщо на момент покаяння вона була розлучена, примиритись і відновити сім'ю, якщо це можливо; якщо була у повторному шлюбі, не розлучатись; якщо була у незаконному шлюбі, узаконити його.",
         en: "A person who has come to God should bring their marital situation into line with God's Word: if they were divorced at the time of their conversion, they should reconcile and restore the family wherever possible; if they were already remarried, they should not divorce; if they were in an unlawful marriage, they should make it lawful.",
       },
       {
@@ -564,7 +564,7 @@ export const statementOfFaith: FaithArticle[] = [
       },
       {
         uk: "Ми визнаємо, що діти з моменту зачаття є благословенням від Господа, тому штучне переривання вагітності (аборт) розглядається як вбивство і засуджується як навмисний гріх.",
-        en: "We hold that children, from the moment of conception, are a blessing from the Lord — therefore the deliberate termination of a pregnancy (abortion) is regarded as the taking of a life and condemned as a willful sin.",
+        en: "We hold that children, from the moment of conception, are a blessing from the Lord. Therefore the deliberate termination of a pregnancy (abortion) is regarded as the taking of a life and condemned as a willful sin.",
       },
     ],
     refs: "Gen. 2:18-24; Matt. 5:32, 19:4-6,9; Mark 10:11-12; Rom. 1:26-28, 7:2-3; 1 Cor. 7:2, 10:13, 39; 2 Cor. 6:14; Heb. 12:16, 13:4; Lev. 18:22; Matt. 3:8; Rom. 12:18; 1 Cor. 7:12-17, 24; 1 Pet. 2:13; Ps. 126:3-5; Matt. 18:6; Eph. 6:4; Prov. 13:24, 23:13-14; Deut. 6:7-8; Ps. 138:13-16; Job 10:8-12",
@@ -578,16 +578,16 @@ export const statementOfFaith: FaithArticle[] = [
         en: "According to God's Word, the governing authorities that exist are established by God \"to punish those who do wrong and to commend those who do right.\"",
       },
       {
-        uk: "Нашим обов'язком є підкорятись законам влади, крім тих, які суперечать Слову Божому. За наукою Христа, треба віддавати «...кесареве — кесареві, а Богові — Боже», але абсолютний послух і покора належать Богові, і тільки Бог є Господом сумління віруючої людини.",
-        en: "It is our duty to obey the laws of the authorities, except where they conflict with God's Word. As Christ taught, we render \"to Caesar what is Caesar's, and to God what is God's\" — but absolute obedience and submission belong to God alone, and God alone is Lord of the believer's conscience.",
+        uk: "Нашим обов'язком є підкорятись законам влади, крім тих, які суперечать Слову Божому. За наукою Христа, треба віддавати «...кесареве кесареві, а Богові Боже», але абсолютний послух і покора належать Богові, і тільки Бог є Господом сумління віруючої людини.",
+        en: "It is our duty to obey the laws of the authorities, except where they conflict with God's Word. As Christ taught, we render \"to Caesar what is Caesar's, and to God what is God's.\" But absolute obedience and submission belong to God alone, and God alone is Lord of the believer's conscience.",
       },
       {
         uk: "Ми повинні молитись за уряд, щоб він по волі Божій так виконував ввірену йому владу, щоб зберігати мир і правосуддя. Місцева церква є незалежним від держави об'єднанням віруючих.",
         en: "We are to pray for our government, that according to God's will it would exercise its entrusted authority to preserve peace and justice. The local church is an assembly of believers independent of the state.",
       },
       {
-        uk: "Вибір та звільнення служителів церкви, прийняття в члени, відлучення, виконання духовних потреб — вінчання, хрищення, членські зібрання та інші церковні акти — проводяться без втручання державних установ. Реєстрація церкви в державних установах не може служити підставою для порушення принципу відділення церкви від держави.",
-        en: "The calling and release of the church's ministers, the reception of members, church discipline, and the carrying out of spiritual needs — including weddings, baptisms, members' meetings, and other church acts — are conducted without interference from government bodies. Registration of the church with government bodies may not be used as grounds for violating the principle of the separation of church and state.",
+        uk: "Вибір та звільнення служителів церкви, прийняття в члени, відлучення, виконання духовних потреб (вінчання, хрищення, членські зібрання та інші церковні акти) проводяться без втручання державних установ. Реєстрація церкви в державних установах не може служити підставою для порушення принципу відділення церкви від держави.",
+        en: "The calling and release of the church's ministers, the reception of members, church discipline, and the carrying out of spiritual needs (including weddings, baptisms, members' meetings, and other church acts) are conducted without interference from government bodies. Registration of the church with government bodies may not be used as grounds for violating the principle of the separation of church and state.",
       },
       {
         uk: "Ми віримо, що у питаннях військової служби не повинно бути жодного примусу до тих, чиє сумління не дозволяє їм складати присягу та нести військову службу зі зброєю.",

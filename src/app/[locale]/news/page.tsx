@@ -32,8 +32,8 @@ export default async function NewsPage({
         </h1>
         <p className="mt-4 max-w-xl text-charcoal/70">
           {locale === "uk"
-            ? "Свята, служіння, хрещення, табори — те, чим живе наша церква протягом року."
-            : "Celebrations, outreach, baptisms, camps — what our church has been living through the year."}
+            ? "Свята, служіння, хрещення, табори: те, чим живе наша церква протягом року."
+            : "Celebrations, outreach, baptisms, camps: what our church has been living through the year."}
         </p>
       </section>
 

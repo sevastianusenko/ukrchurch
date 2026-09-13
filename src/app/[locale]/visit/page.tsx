@@ -30,8 +30,8 @@ export default async function VisitPage({
         </h1>
         <p className="mt-4 max-w-xl text-charcoal/70">
           {locale === "uk"
-            ? "Перший раз? Просто приходьте — не потрібно нічого готувати заздалегідь."
-            : "First time? Just come — there's nothing you need to prepare ahead of time."}
+            ? "Перший раз? Просто приходьте. Не потрібно нічого готувати заздалегідь."
+            : "First time? Just come. There's nothing you need to prepare ahead of time."}
         </p>
       </section>
 

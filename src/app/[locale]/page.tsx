@@ -53,8 +53,8 @@ export default async function HomePage({
             src="/photos/hero.jpg"
             alt={
               locale === "uk"
-                ? "Діти нашої церкви на дитячому таборі"
-                : "Kids from our church at summer camp"
+                ? "Пшеничне поле на заході сонця"
+                : "A wheat field at sunset"
             }
             fill
             priority
@@ -62,6 +62,15 @@ export default async function HomePage({
             className="hero-photo object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/10" />
+
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Harvest_Season_(220341233).jpeg"
+            target="_blank"
+            rel="noreferrer"
+            className="absolute right-3 top-3 z-10 text-[10px] text-wheat/50 hover:text-wheat/80"
+          >
+            Photo: Christoph Wurst / Wikimedia Commons (CC BY-SA 3.0)
+          </a>
 
           <div className="relative mx-auto flex h-full max-w-6xl flex-col justify-end gap-8 px-5 pb-14 sm:pb-20">
             <div className="max-w-2xl">
@@ -108,7 +117,7 @@ export default async function HomePage({
               <span className="font-bold">
                 {formatDate(upcomingEvents[0].date, locale).toUpperCase()} · {upcomingEvents[0].time}
               </span>{" "}
-              — {upcomingEvents[0].title[locale]} · {upcomingEvents[0].location[locale]}
+              · {upcomingEvents[0].title[locale]} · {upcomingEvents[0].location[locale]}
             </p>
             <span className="whitespace-nowrap text-sm font-semibold underline underline-offset-4">
               {locale === "uk" ? "Детальніше →" : "Details →"}

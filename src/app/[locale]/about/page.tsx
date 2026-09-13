@@ -43,7 +43,11 @@ export default async function AboutPage({
       <section className="relative h-[46vh] min-h-[320px] w-full overflow-hidden">
         <Image
           src="/photos/about.jpg"
-          alt={locale === "uk" ? "Пшениця у теплому світлі" : "Wheat in warm light"}
+          alt={
+            locale === "uk"
+              ? "Наша громада на благодійному ярмарку випічки"
+              : "Our congregation at the charity bake sale"
+          }
           fill
           priority
           sizes="100vw"
@@ -116,8 +120,8 @@ export default async function AboutPage({
         <div className="mx-auto max-w-3xl px-5 py-14 sm:py-20">
           <p className="mb-8 text-sm leading-relaxed text-charcoal/60">
             {locale === "uk"
-              ? "Це 15 статей нашого Визнання Віри — переконань, які об'єднують нашу громаду. Натисніть на будь-яку, щоб прочитати повністю."
-              : "These are the 15 articles of our Statement of Faith — the convictions that hold our congregation together. Tap any one to read it in full."}
+              ? "Це 15 статей нашого Визнання Віри, переконань, які об'єднують нашу громаду. Натисніть на будь-яку, щоб прочитати повністю."
+              : "These are the 15 articles of our Statement of Faith, the convictions that hold our congregation together. Tap any one to read it in full."}
           </p>
           <FaithAccordion articles={statementOfFaith} locale={locale} />
         </div>
@@ -131,8 +135,8 @@ export default async function AboutPage({
           <PhotoPlaceholder
             label={
               locale === "uk"
-                ? "Фото пасторів — надішліть, коли буде готово"
-                : "Pastors' photo — send when ready"
+                ? "Фото пасторів: надішліть, коли буде готово"
+                : "Pastors' photo: send when ready"
             }
           />
           <div>
@@ -144,7 +148,7 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 max-w-xl text-charcoal/75">
               {locale === "uk"
-                ? "Прізвища, служіння кожного та фото ще будуть додані. Завітайте в неділю — і познайомтесь особисто."
+                ? "Прізвища, служіння кожного та фото ще будуть додані. Завітайте в неділю і познайомтесь особисто."
                 : "Surnames, each one's role, and photos are still to come. Come by on a Sunday and meet them in person."}
             </p>
           </div>

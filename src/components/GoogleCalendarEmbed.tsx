@@ -14,8 +14,8 @@ export default function GoogleCalendarEmbed({
         className="aspect-[16/10] w-full"
         label={
           locale === "uk"
-            ? "Google-календар — надішліть посилання, щоб вбудувати тут"
-            : "Google Calendar — send the link to embed it here"
+            ? "Google-календар: надішліть посилання, щоб вбудувати тут"
+            : "Google Calendar: send the link to embed it here"
         }
       />
     );

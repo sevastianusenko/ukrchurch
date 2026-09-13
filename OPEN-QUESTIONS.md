@@ -51,18 +51,11 @@ photographed, which resolved several items below)
 6. **Zelle QR code — resolved.** The client saved the real QR screenshot
    to `Pictures/Screenshots`; it's now on `/give` as
    `public/photos/give/zelle-qr.png`. No longer open.
-7. **Google Calendar embed — needs the real link/ID.** The client asked
-   for "a Google Calendar like there was before" (2026-09-13).
-   `/calendar` now has a `GoogleCalendarEmbed` component wired up and
-   ready — it just needs `content/church.ts` → `googleCalendar.embedUrl`
-   set. Neither old site actually had a `/calendar` or `/events` page
-   (both 404), so send the calendar's public/embed link (Google Calendar
-   → Settings → that calendar → "Integrate calendar" → Public URL, or the
-   calendar ID that looks like `something@group.calendar.google.com`) and
-   this becomes live. Until then it shows an honest placeholder, plus a
-   qualitative "what we usually do each year" section (kids camp in
-   summer, Harvest Festival in September, etc.) linking to real past News
-   posts as examples.
+7. **Google Calendar embed — resolved.** Client sent the real embed URL
+   2026-09-13; it's live in `content/church.ts` → `googleCalendar.embedUrl`
+   and rendering on `/calendar`. Its timezone parameter is
+   `America/Indiana/Vincennes` (Eastern-observing, just an unusual IANA
+   name) rather than `America/New_York` — passed through as given.
 8. **Harvest Festival 2026 — added, client confirmed 2026-09-13.** The
    flyer found at `Downloads/запрошення на свято жнив 2026.png` (20
    вересня, 11:00, 225 Woodcrest Dr, Ephrata, PA 17522) is now a real News
@@ -105,6 +98,25 @@ photographed, which resolved several items below)
     intended for the church's YouTube channel (`@UEBCLancaster`) rather
     than a direct file. If it's on YouTube, send the link and it can be
     embedded on this post.
+13. **Design direction changed twice on the hero, same day.** 2026-09-13:
+    (a) client said the neutral-background move should extend to remove
+    "beige/cream" everywhere — `wheat`/`wheat-soft` tokens in
+    `globals.css` changed from warm cream to neutral near-white/white
+    (see `DESIGN.md`). (b) Home hero went stock-wheat → real bake-sale
+    photo → real kids-camp-soccer photo ("не наше," rejected) → **back to
+    a wheat field**, this time a high-quality real photograph (Wikimedia
+    Commons, CC BY-SA 3.0, credited in a small corner link on the hero —
+    see `PHOTOS-NEEDED.md`). About page's hero got the real bake-sale
+    photo instead, since a second wheat photo there would undercut the
+    "remove beige" direction. Net effect: the sitewide palette is neutral,
+    but the hero specifically is a wheat field again by explicit request
+    — these two aren't in tension, just both true.
+14. **Em-dash cleanup — in progress.** 2026-09-13, client asked to remove
+    all em-dashes ("—") from site copy (reads as "too AI-generated").
+    ~150 instances across `content/church.ts` and `content/posts.ts` are
+    being cleaned up by a background pass at the time of this note —
+    check `git log` / diff these two files for the actual final state,
+    since this note may be written before that pass finished.
 
 ## Content decisions made without asking (flagging, not blocking)
 

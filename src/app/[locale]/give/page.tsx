@@ -31,8 +31,8 @@ export default async function GivePage({
         </h1>
         <p className="mt-4 max-w-xl text-charcoal/70">
           {locale === "uk"
-            ? "Дякуємо, що підтримуєте служіння нашої церкви — фінансово чи молитвою."
-            : "Thank you for supporting our church's ministry — financially or in prayer."}
+            ? "Дякуємо, що підтримуєте служіння нашої церкви, фінансово чи молитвою."
+            : "Thank you for supporting our church's ministry, financially or in prayer."}
         </p>
       </section>
 

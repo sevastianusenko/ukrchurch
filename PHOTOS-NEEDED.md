@@ -14,18 +14,28 @@ Last updated: 2026-09-13. Source: StockSnap.io (CC0 / public domain, no
 attribution legally required — original StockSnap URLs kept below for
 traceability only).
 
-**Home hero — now a real photo.** First swapped 2026-09-13 from a stock
-wheat photo to `bake-sale-recap-2025`'s hero, then swapped again the same
-day at the client's request for something more "neutral" (the client
-also asked to remove the beige/cream background sitewide — see
-`globals.css`, `DESIGN.md`). Now uses `kids-camp-2026-recap/6.jpg` (real
-kids playing soccer at the June 2026 camp, 2000×1500, cool/neutral
-daylight tones — not warm-toned like the bake-sale or wheat options). No
-longer needs replacing.
+**Home hero — went through three versions 2026-09-13.** Stock wheat →
+`bake-sale-recap-2025`'s real photo → real kids-camp soccer photo (too
+"not ours," per the client) → **back to a wheat field, but a genuinely
+high-quality one** this time: "Harvest Season" by Christoph Wurst, via
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Harvest_Season_(220341233).jpeg),
+**CC BY-SA 3.0 — requires attribution**, credited here and due credit if
+this photo is ever changed again. A wide-angle golden-hour wheat field in
+Austria with a combine harvester and a village church spire in the
+distance — 2048×1365, shot on a Nikon D610. This is a deliberate return
+to the symbolic/editorial approach (see "Why no photo of..." below), not
+a mistake — the client explicitly asked for a wheat field back, just
+higher quality than the original StockSnap crop. No longer needs
+replacing unless the client wants a literal photo of this church again.
+
+**About page hero — now a real photo.** Swapped 2026-09-13 from a wheat
+sheaf photo to the same real `bake-sale-recap-2025` congregation photo
+that was briefly the home hero (real members, several in vyshyvanka).
+Reusing it here fits "About/Who We Are" better than it fit the home page.
+No longer needs replacing.
 
 | File | Used on | Shows | Real photo needed |
 |---|---|---|---|
-| `/public/photos/about.jpg` | About page | A second wheat-sheaf photo (`light-wheat_7L4MVU7QZO`), darker/moodier crop | A real photo representing the congregation's story — could be a group photo, an anniversary gathering, or the building |
 | `/public/photos/worship.jpg` | Ministries — Sunday Worship | Close-up of piano keys, soft light (`piano-keyboard_TNDRHVWFHH`) | Real photo of the worship team / choir / musicians during a service |
 | `/public/photos/sunday-school.jpg` | Ministries — Sunday School | A dad reading a book with two young kids in a blanket fort with fairy lights (`family-holiday_AFYO3BBKYT`) — generic family, not this church's kids | Real photo of a Sunday school class — kids with a teacher, craft table, or classroom |
 | `/public/photos/youth.jpg` | Ministries — Youth Group | A group of students collaborating around a table with markers and paper, faces mostly out of frame (`people-girls_N444PJYUP9`) | Real photo of the church's youth group meeting |

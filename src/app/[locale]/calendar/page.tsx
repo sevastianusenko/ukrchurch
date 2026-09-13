@@ -33,8 +33,8 @@ export default async function CalendarPage({
         </h1>
         <p className="mt-4 max-w-xl text-charcoal/70">
           {locale === "uk"
-            ? "Щотижневий ритм молитви та Слова — і те, чим живе церква протягом року."
-            : "Our weekly rhythm of prayer and the Word — and what the church's year looks like."}
+            ? "Щотижневий ритм молитви та Слова, і те, чим живе церква протягом року."
+            : "Our weekly rhythm of prayer and the Word, and what the church's year looks like."}
         </p>
       </section>
 
@@ -66,8 +66,8 @@ export default async function CalendarPage({
         </h2>
         <p className="mt-2 max-w-2xl text-charcoal/70">
           {locale === "uk"
-            ? "Повний календар церкви з точними датами — нижче."
-            : "The church's full calendar with exact dates — below."}
+            ? "Повний календар церкви з точними датами нижче."
+            : "The church's full calendar with exact dates below."}
         </p>
 
         {upcomingEvents.length > 0 && (

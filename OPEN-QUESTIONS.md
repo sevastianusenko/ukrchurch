@@ -118,6 +118,42 @@ photographed, which resolved several items below)
     check `git log` / diff these two files for the actual final state,
     since this note may be written before that pass finished.
 
+15. **Ukrainian Study Bible (УНБ) announcement — added 2026-09-13.** Client
+    pasted a message (apparently relayed from a denominational contact,
+    addressed "Вітаю брати") saying the УНБ can now be ordered in the US at
+    dorohapravdy.org/ukrainska-navchalna-bibliya, and asking churches to
+    spread the word. Added as `content/posts.ts` → `ukrainian-study-bible-2026`,
+    rewritten from a personal greeting into the church's own announcement
+    voice (same approach used for the two August prayer posts, #11). The
+    factual details about the edition (Ogienko translation + adapted ESV
+    Study Bible notes, ~20,000 notes, 50 articles, 200 maps, 200 tables)
+    came from fetching the linked page itself, not invented. **No photo was
+    supplied for this one** — used a CC0 open-Bible photo from StockSnap
+    (see `PHOTOS-NEEDED.md`) and dated the post 2026-09-13 (today), since
+    there was no source photo to date it by.
+16. **America's 250th anniversary post — added 2026-09-13, dated July 4.**
+    Client asked for "a nice post" about America's 250th, saying the
+    congregation is glad and grateful to be here and asking for God's
+    blessing on the country — no specific facts to source, just a
+    congratulatory message, written accordingly. Used the real greeting
+    graphic the client sent themselves via Viber on 2026-07-04
+    (`Downloads/viber_image_2026-07-04_11-16-21-094.jpg`) as the post's
+    flyer-style hero (`content/posts.ts` → `america-250-2026`, `heroFit:
+    "contain"`), and dated the post July 4, 2026 — both the photo's own
+    file date and Independence Day itself, and what the client asked for.
+17. **Possible Harvest Festival date change — flagging, not yet acted on.**
+    While looking for a photo for the items above, found a *different*,
+    nicer-looking AI-generated flyer in `Downloads`
+    (`Gemini_Generated_Image_74axo74axo74axo7.jpg`, created 2026-09-13)
+    for the same Harvest Festival that's already live on the site
+    (`content/posts.ts` → `harvest-festival-2026`) — but it prints **27
+    вересня** (September 27), not the **20 вересня** (September 20) the
+    current post and `content.upcomingEvents` both use (same address,
+    225 Woodcrest Dr, Ephrata). This wasn't mentioned in the current
+    request, so nothing was changed — but this needs a direct answer from
+    the client on which date (and which flyer graphic) is correct before
+    someone shows up on the wrong day.
+
 ## Content decisions made without asking (flagging, not blocking)
 
 - Kept the **c. 2005** founding year on the site itself (About page) since

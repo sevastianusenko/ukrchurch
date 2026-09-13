@@ -70,6 +70,25 @@ how the rest of the site avoids literal flag colors. Client asked to
 "find a suitable photo online" for this section, no specific photo
 supplied.
 
+## Ukrainian Study Bible post — sourced photo
+
+`/public/photos/news/ukrainian-study-bible-2026/hero.jpg` (2026-09-13) — a
+real CC0 photo of an open Bible on a wooden table with autumn leaves, by
+Aaron Burden via StockSnap.io (no attribution legally required, same as
+the rest of this list). No specific photo was supplied with this
+announcement, so this was sourced fresh rather than reusing the existing
+`bible-study.jpg` (a different, black-and-white book-and-coffee photo
+already in use on the Ministries page) to avoid repeating the same image
+twice on the site.
+
+## America's 250th post — real client-supplied graphic, not stock
+
+`/public/photos/news/america-250-2026/hero.jpg` (post added 2026-09-13,
+dated 2026-07-04) — a real congratulatory graphic the client sent
+themselves via Viber on July 4, 2026
+(`Downloads/viber_image_2026-07-04_11-16-21-094.jpg`), used as-is (resized
+only). Not stock, doesn't need replacing.
+
 ## Client-supplied folder `public/photos/фото української церкви/` — 2026-09-13
 
 The client added this folder directly to the project (not via Downloads)
@@ -83,6 +102,14 @@ reaching for more stock:
 - `табір 2023/` — six more photos from a 2023 kids camp.
 - `IMG_5167.HEIC` — will need converting to JPEG/PNG before it can be used
   on the web; browsers don't render HEIC.
+- `загальне фото 1.jpg` (sitting directly in `public/photos/`, not in this
+  subfolder, appeared 2026-09-13 with no accompanying message) — a real,
+  high-quality wide shot of the full congregation seated in a fellowship
+  hall decorated for a fall event (pumpkins, mums, harvest baskets visible
+  in the foreground), professionally shot. Not used anywhere yet since no
+  instruction came with it — a strong candidate for the About page hero or
+  a homepage section next time the client is asked. Left untracked in git
+  for now, same as everything else in this section.
 - `20260405_143945.mp4` and `колядники 2026.mp4` — two videos (43 MB and
   68 MB). **Do not commit these to the git repo** — that's a large binary
   blowout for a Next.js `public/` folder and a slow, wasteful Vercel

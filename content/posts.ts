@@ -28,6 +28,66 @@ const p = (uk: string, en: string): Bi => ({ uk, en });
 
 export const posts: NewsPost[] = [
   {
+    slug: "ukrainian-study-bible-2026",
+    date: "2026-09-13",
+    category: p("Оголошення", "Announcement"),
+    title: p(
+      "Українську Навчальну Біблію тепер можна замовити в США",
+      "The Ukrainian Study Bible Is Now Available to Order in the US"
+    ),
+    excerpt: p(
+      "УНБ — переклад Івана Огієнка з навчальними матеріалами — тепер можна замовити прямо в США.",
+      "The UNB — Ivan Ogienko's translation with study materials — can now be ordered directly in the US."
+    ),
+    hero: {
+      src: "/photos/news/ukrainian-study-bible-2026/hero.jpg",
+      alt: p("Розгорнута Біблія на дерев'яному столі", "An open Bible on a wooden table"),
+    },
+    body: [
+      p(
+        "Раді поділитися доброю звісткою: Українську Навчальну Біблію (УНБ) тепер можна замовити прямо в США за посиланням dorohapravdy.org/ukrainska-navchalna-bibliya.",
+        "We're glad to share some good news: the Ukrainian Study Bible (UNB) can now be ordered directly in the US at dorohapravdy.org/ukrainska-navchalna-bibliya."
+      ),
+      p(
+        "УНБ поєднує український переклад Івана Огієнка з навчальними матеріалами, адаптованими з ESV Study Bible: вступи до кожної книги Біблії, близько 20 000 коментарів і приміток до тексту, 50 богословських, біблійних та історичних статей, а також 200 кольорових карт і 200 таблиць.",
+        "The UNB combines Ivan Ogienko's Ukrainian translation with study materials adapted from the ESV Study Bible: introductions to every book of the Bible, about 20,000 notes and comments on the text, 50 theological, biblical, and historical articles, and 200 color maps and 200 tables."
+      ),
+      p(
+        "Якщо у вашій родині чи серед знайомих є бажаючі мати УНБ, будемо вдячні, якщо поширите цю інформацію.",
+        "If there's anyone in your family or among your friends who would like to have a UNB, we'd be grateful if you shared this."
+      ),
+    ],
+  },
+  {
+    slug: "america-250-2026",
+    date: "2026-07-04",
+    category: p("Свято", "Celebration"),
+    title: p("З 250-річчям США!", "Happy 250th Anniversary, USA!"),
+    excerpt: p(
+      "Сьогодні Америка святкує 250 років незалежності. Ми вдячні Богові за цю землю, що стала домом для нашої громади.",
+      "Today America celebrates 250 years of independence. We're grateful to God for this land, which has become home for our congregation."
+    ),
+    hero: {
+      src: "/photos/news/america-250-2026/hero.jpg",
+      alt: p("Вітальна листівка з 250-річчям США, 1776–2026", "A 250th-anniversary greeting card for the USA, 1776–2026"),
+    },
+    heroFit: "contain",
+    body: [
+      p(
+        "Сьогодні, 4 липня, Сполучені Штати святкують 250 років незалежності. Ми щиро вітаємо цю землю з ювілеєм!",
+        "Today, July 4th, the United States celebrates 250 years of independence. We warmly congratulate this land on its anniversary!"
+      ),
+      p(
+        "Ми вдячні Богові, що привів нашу громаду сюди, дав тут дім, свободу вірити й молитися, і можливість зростати разом як церква.",
+        "We're grateful to God for bringing our congregation here, for giving us a home here, freedom to believe and pray, and the chance to grow together as a church."
+      ),
+      p(
+        "Нехай Господь і надалі благословляє Америку, її народ і всіх, хто в ній живе. З Днем Незалежності!",
+        "May the Lord continue to bless America, its people, and everyone who lives here. Happy Independence Day!"
+      ),
+    ],
+  },
+  {
     slug: "kids-camp-2026-recap",
     date: "2026-06-30",
     category: p("Подія", "Event"),

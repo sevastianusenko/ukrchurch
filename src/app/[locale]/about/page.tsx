@@ -45,8 +45,8 @@ export default async function AboutPage({
           src="/photos/about.jpg"
           alt={
             locale === "uk"
-              ? "Наша громада на благодійному ярмарку випічки"
-              : "Our congregation at the charity bake sale"
+              ? "Наша громада на зустрічі з нагоди Нового року"
+              : "Our congregation at a New Year's gathering"
           }
           fill
           priority

@@ -28,16 +28,26 @@ a mistake — the client explicitly asked for a wheat field back, just
 higher quality than the original StockSnap crop. No longer needs
 replacing unless the client wants a literal photo of this church again.
 
-**About page hero — now a real photo.** Swapped 2026-09-13 from a wheat
-sheaf photo to the same real `bake-sale-recap-2025` congregation photo
-that was briefly the home hero (real members, several in vyshyvanka).
-Reusing it here fits "About/Who We Are" better than it fit the home page.
-No longer needs replacing.
+**About page hero — went through two real photos.** First swapped
+2026-09-13 from a wheat sheaf to the `bake-sale-recap-2025` photo, then
+swapped again the same day to an even better one the client added
+directly to `public/photos/фото української церкви/`: a full
+congregation group photo from a church New Year's gathering, 2026 (dozens
+of people, all ages, in the fellowship hall). No longer needs replacing.
+
+**Ministries — Sunday Worship and Sunday School are now real photos too**,
+from that same client-supplied folder:
+- `/public/photos/worship.jpg` ← "хор.jpg", the church choir singing at
+  the pulpit in full vyshyvanka, Christmas decor in the sanctuary.
+- `/public/photos/sunday-school.jpg` ← "20260405_143945.jpg", the
+  children/youth choir singing at an Easter service (real interior: wood
+  pews, cross, an "ALLELUIA He Has Risen" banner). Originally 4000×3000
+  from a Samsung Galaxy S23+ with EXIF orientation "upper-right" — resized
+  to ~1500×2000 with rotation applied first (a plain resize without
+  correcting for EXIF would have saved it sideways).
 
 | File | Used on | Shows | Real photo needed |
 |---|---|---|---|
-| `/public/photos/worship.jpg` | Ministries — Sunday Worship | Close-up of piano keys, soft light (`piano-keyboard_TNDRHVWFHH`) | Real photo of the worship team / choir / musicians during a service |
-| `/public/photos/sunday-school.jpg` | Ministries — Sunday School | A dad reading a book with two young kids in a blanket fort with fairy lights (`family-holiday_AFYO3BBKYT`) — generic family, not this church's kids | Real photo of a Sunday school class — kids with a teacher, craft table, or classroom |
 | `/public/photos/youth.jpg` | Ministries — Youth Group | A group of students collaborating around a table with markers and paper, faces mostly out of frame (`people-girls_N444PJYUP9`) | Real photo of the church's youth group meeting |
 | `/public/photos/prayer.jpg` | Ministries — Prayer & Home Groups | A lit candle on a wood table by a window (`candle-table_CGNTB37FCT`) | Real photo of a home group or prayer gathering |
 | `/public/photos/bible-study.jpg` | Ministries — Bible Study | Black-and-white photo of an open book on a table with coffee, hand turning a page (`book-wood_HYRNRUZTNY`) | Real photo of a Bible study session — open Bibles, people around a table |
@@ -46,6 +56,28 @@ No longer needs replacing.
 `/public/photos/news/kids-camp-2025/hero.jpg`, one of this church's own 2025
 camp photos (see "Real content migrated from the old site" below). No
 longer needs replacing, unless the church wants a more recent one.
+
+## Client-supplied folder `public/photos/фото української церкви/` — 2026-09-13
+
+The client added this folder directly to the project (not via Downloads)
+with no accompanying instructions beyond "додав new фото." Used so far:
+`хор.jpg` → `worship.jpg`, `20260405_143945.jpg` → `sunday-school.jpg`,
+and the New Year's group photo → `about.jpg` (see above). **Not yet used,
+still sitting in that folder** — a future session should look here before
+reaching for more stock:
+- `жіноче зустрічі.jpg` and `зустрічь жінок обеднання.jpg` — two women's
+  ministry gathering photos, dated Dec 2023.
+- `табір 2023/` — six more photos from a 2023 kids camp.
+- `IMG_5167.HEIC` — will need converting to JPEG/PNG before it can be used
+  on the web; browsers don't render HEIC.
+- `20260405_143945.mp4` and `колядники 2026.mp4` — two videos (43 MB and
+  68 MB). **Do not commit these to the git repo** — that's a large binary
+  blowout for a Next.js `public/` folder and a slow, wasteful Vercel
+  deploy. If the client wants video on the site, the right move is
+  probably uploading to the church's own YouTube channel
+  (`@UEBCLancaster`, already linked in the footer) and embedding the
+  YouTube link on the relevant post, not hosting the raw file here — ask
+  before doing either.
 
 ## Zelle QR code — resolved
 

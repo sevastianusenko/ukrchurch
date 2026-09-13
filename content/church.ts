@@ -272,8 +272,8 @@ export const ministries: Ministry[] = [
     },
     photo: "/photos/worship.jpg",
     alt: {
-      uk: "Прославлення на недільному богослужінні",
-      en: "Worship during Sunday service",
+      uk: "Хор нашої церкви прославляє Бога на богослужінні",
+      en: "Our church choir leading worship during a service",
     },
   },
   {
@@ -284,7 +284,10 @@ export const ministries: Ministry[] = [
       en: "While the adults worship, children learn God's Word in age-based groups, through stories, songs, and hands-on activities.",
     },
     photo: "/photos/sunday-school.jpg",
-    alt: { uk: "Діти на уроці недільної школи", en: "Kids in Sunday school class" },
+    alt: {
+      uk: "Діти нашої церкви співають на Великодньому богослужінні",
+      en: "Kids from our church singing at an Easter service",
+    },
   },
   {
     slug: "youth",

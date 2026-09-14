@@ -19,8 +19,8 @@ export const site = {
     en: "UEBC Lancaster",
   } satisfies Bi,
   tagline: {
-    uk: "Дім для української громади Ланкастера, у Слові, молитві й спільноті.",
-    en: "A home for Lancaster's Ukrainian community, in the Word, in prayer, in community.",
+    uk: "Дім для української громади Ланкастера — тут ми живемо Словом Божим, молитвою та спільним життям.",
+    en: "A home for Lancaster's Ukrainian community — living by God's Word, in prayer, together.",
   } satisfies Bi,
 };
 

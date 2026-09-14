@@ -108,7 +108,7 @@ piece — while trusting that the doctrine page is handled with care.
   no `next-intl`/`next-i18next` dependency, content is plain typed data in
   `/content/church.ts`, picked per-locale at render time
 - Static generation for all pages
-- Deployed on Vercel (not yet deployed — see OPEN-QUESTIONS.md for domain)
+- Deployed on Vercel, live at `https://www.ukrlancaster.church` (connected 2026-09-14, see OPEN-QUESTIONS.md #5)
 - Images: `next/image`, explicit width/height, no layout shift
 - No CMS. Content lives in typed data files under `/content`.
 - No client component unless it genuinely needs interactivity (language

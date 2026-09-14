@@ -40,13 +40,16 @@ photographed, which resolved several items below)
    phone `267-686-1420` and email `contact@ukrlancaster.church`. This site
    reuses both as-is. Confirm these still work, especially the email if the
    new site moves to a new domain.
-5. **Domain name — one data point found.** The 2026-08-30 bulletin prints
-   `WWW.UKRCHURCHLANCASTER.COM` as the church's site — a signal (not a
-   final decision) that this may be the domain they consider "official,"
-   even though that site itself is mostly unfinished (see CLAUDE.md). Site
-   is still built without a live domain; `src/app/robots.ts` and a
-   `sitemap.ts` (not yet added) both need an absolute production URL once
-   one is picked.
+5. **Domain name — resolved 2026-09-14.** The client connected
+   `www.ukrlancaster.church` (the domain of the old, previously-migrated
+   site) to this Vercel project — confirmed live via `curl` and via a
+   Google Search Console screenshot showing that domain's sitemap being
+   read. Note this is a *different* domain than the one printed in the
+   2026-08-30 bulletin (`WWW.UKRCHURCHLANCASTER.COM`, #4/#2 above) — not
+   a contradiction to chase down, just worth knowing both domain names
+   exist in the wild if either comes up again. `src/app/sitemap.ts` (its
+   `SITE_URL` constant) and `src/app/robots.ts` now point at the real
+   domain instead of the `vercel.app` preview URL.
 
 6. **Zelle QR code — resolved.** The client saved the real QR screenshot
    to `Pictures/Screenshots`; it's now on `/give` as

@@ -11,7 +11,10 @@ export function proxy(request: NextRequest) {
 
   const url = request.nextUrl.clone();
   url.pathname = `/${defaultLocale}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.redirect(url);
+  // 308 (permanent), not the 307 default — this locale routing is
+  // permanent, and a real domain is now live, so it's worth Google
+  // consolidating ranking signals onto the /uk destination.
+  return NextResponse.redirect(url, 308);
 }
 
 export const config = {

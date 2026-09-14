@@ -2,10 +2,11 @@ import type { MetadataRoute } from "next";
 import { locales } from "../../content/church";
 import { posts } from "../../content/posts";
 
-// TODO: replace with the real production domain once it's chosen (see
-// OPEN-QUESTIONS.md #5) — update this one constant, nothing else needs
-// to change. `robots.ts` reads this same value for its `sitemap` field.
-export const SITE_URL = "https://church-lancaster.vercel.app";
+// Confirmed 2026-09-14: the client connected ukrlancaster.church (the
+// domain of the church's old WordPress site) to this Vercel project —
+// www.ukrlancaster.church already serves this app. `robots.ts` reads
+// this same value for its `sitemap` field.
+export const SITE_URL = "https://www.ukrlancaster.church";
 
 const STATIC_ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
   { path: "", priority: 1, changeFrequency: "weekly" },

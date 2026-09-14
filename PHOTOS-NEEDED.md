@@ -35,10 +35,13 @@ directly to `public/photos/фото української церкви/`: a ful
 congregation group photo from a church New Year's gathering, 2026 (dozens
 of people, all ages, in the fellowship hall). No longer needs replacing.
 
-**Ministries — Sunday Worship and Sunday School are now real photos too**,
-from that same client-supplied folder:
-- `/public/photos/worship.jpg` ← "хор.jpg", the church choir singing at
-  the pulpit in full vyshyvanka, Christmas decor in the sanctuary.
+**Ministries — Sunday Worship and Sunday School are now real photos too**:
+- `/public/photos/worship.jpg` — updated again 2026-09-13 (second real
+  photo for this slot): was "хор.jpg" (the choir singing at the pulpit),
+  now "загальне фото 1.jpg", a wide shot of the full congregation seated
+  together in the fellowship hall at a fall service (client request: "put
+  this photo in place of the Sunday-gathering one"). Alt text updated to
+  match.
 - `/public/photos/sunday-school.jpg` ← "20260405_143945.jpg", the
   children/youth choir singing at an Easter service (real interior: wood
   pews, cross, an "ALLELUIA He Has Risen" banner). Originally 4000×3000
@@ -70,16 +73,15 @@ how the rest of the site avoids literal flag colors. Client asked to
 "find a suitable photo online" for this section, no specific photo
 supplied.
 
-## Ukrainian Study Bible post — sourced photo
+## Ukrainian Study Bible post — real photo (resolved)
 
-`/public/photos/news/ukrainian-study-bible-2026/hero.jpg` (2026-09-13) — a
-real CC0 photo of an open Bible on a wooden table with autumn leaves, by
-Aaron Burden via StockSnap.io (no attribution legally required, same as
-the rest of this list). No specific photo was supplied with this
-announcement, so this was sourced fresh rather than reusing the existing
-`bible-study.jpg` (a different, black-and-white book-and-coffee photo
-already in use on the Ministries page) to avoid repeating the same image
-twice on the site.
+`/public/photos/news/ukrainian-study-bible-2026/hero.jpg` — originally a
+sourced CC0 StockSnap photo of a generic open Bible (2026-09-13), replaced
+the same day once the client saved the real product photo
+(`біблія цкраїнска.jpg`): the actual УНБ, closed and open, showing its
+blue-and-yellow cover and a map page. `heroFit: "contain"` added since
+it's a portrait photo with text baked into the bottom of the frame. No
+longer stock, doesn't need replacing.
 
 ## America's 250th post — real client-supplied graphic, not stock
 
@@ -89,27 +91,35 @@ themselves via Viber on July 4, 2026
 (`Downloads/viber_image_2026-07-04_11-16-21-094.jpg`), used as-is (resized
 only). Not stock, doesn't need replacing.
 
+## Homepage "Життя нашої громади" photo mosaic — two tiles swapped 2026-09-13
+
+Client asked to replace mosaic tiles #1 and #3 with other photos (no
+specific replacements named). Chosen from the client-supplied folder to
+add variety (the grid already had two kids-camp photos and one bake-sale
+photo):
+- Tile #1: `/public/photos/womens-retreat-2023.jpg` ← "жіноче зустрічі.jpg",
+  the women's "Закохана в Слово" ("In Love with the Word") retreat, 2023.
+- Tile #3: `/public/photos/camp-fellowship-2023.jpg` ← `табір 2023/IMG_5175.JPG`,
+  a candid shared meal at the 2023 kids camp pavilion — replaces the
+  bake-sale photo, which stayed heavy on "women baking" alongside the
+  retreat photo otherwise.
+
 ## Client-supplied folder `public/photos/фото української церкви/` — 2026-09-13
 
 The client added this folder directly to the project (not via Downloads)
 with no accompanying instructions beyond "додав new фото." Used so far:
-`хор.jpg` → `worship.jpg`, `20260405_143945.jpg` → `sunday-school.jpg`,
-and the New Year's group photo → `about.jpg` (see above). **Not yet used,
-still sitting in that folder** — a future session should look here before
-reaching for more stock:
-- `жіноче зустрічі.jpg` and `зустрічь жінок обеднання.jpg` — two women's
-  ministry gathering photos, dated Dec 2023.
-- `табір 2023/` — six more photos from a 2023 kids camp.
+`хор.jpg` (originally) and later `загальне фото 1.jpg` → `worship.jpg`,
+`20260405_143945.jpg` → `sunday-school.jpg`, the New Year's group photo →
+`about.jpg` (see above), and `жіноче зустрічі.jpg` /
+`табір 2023/IMG_5175.JPG` → the homepage mosaic (see above). **Not yet
+used, still sitting in that folder** — a future session should look here
+before reaching for more stock:
+- `зустрічь жінок обеднання.jpg` — another women's ministry gathering
+  photo, dated Dec 2023.
+- `табір 2023/` — five more photos from the 2023 kids camp (one now used,
+  see above).
 - `IMG_5167.HEIC` — will need converting to JPEG/PNG before it can be used
   on the web; browsers don't render HEIC.
-- `загальне фото 1.jpg` (sitting directly in `public/photos/`, not in this
-  subfolder, appeared 2026-09-13 with no accompanying message) — a real,
-  high-quality wide shot of the full congregation seated in a fellowship
-  hall decorated for a fall event (pumpkins, mums, harvest baskets visible
-  in the foreground), professionally shot. Not used anywhere yet since no
-  instruction came with it — a strong candidate for the About page hero or
-  a homepage section next time the client is asked. Left untracked in git
-  for now, same as everything else in this section.
 - `20260405_143945.mp4` and `колядники 2026.mp4` — two videos (43 MB and
   68 MB). **Do not commit these to the git repo** — that's a large binary
   blowout for a Next.js `public/` folder and a slow, wasteful Vercel

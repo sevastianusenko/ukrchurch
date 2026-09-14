@@ -29,7 +29,7 @@ const p = (uk: string, en: string): Bi => ({ uk, en });
 export const posts: NewsPost[] = [
   {
     slug: "ukrainian-study-bible-2026",
-    date: "2026-09-13",
+    date: "2026-07-15",
     category: p("Оголошення", "Announcement"),
     title: p(
       "Українську Навчальну Біблію тепер можна замовити в США",
@@ -41,8 +41,9 @@ export const posts: NewsPost[] = [
     ),
     hero: {
       src: "/photos/news/ukrainian-study-bible-2026/hero.jpg",
-      alt: p("Розгорнута Біблія на дерев'яному столі", "An open Bible on a wooden table"),
+      alt: p("Обкладинка та розгорнуті сторінки Української Навчальної Біблії", "The cover and open pages of the Ukrainian Study Bible"),
     },
+    heroFit: "contain",
     body: [
       p(
         "Раді поділитися доброю звісткою: Українську Навчальну Біблію (УНБ) тепер можна замовити прямо в США за посиланням dorohapravdy.org/ukrainska-navchalna-bibliya.",

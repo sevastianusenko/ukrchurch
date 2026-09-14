@@ -297,8 +297,8 @@ export const ministries: Ministry[] = [
     },
     photo: "/photos/worship.jpg",
     alt: {
-      uk: "Хор нашої церкви прославляє Бога на богослужінні",
-      en: "Our church choir leading worship during a service",
+      uk: "Наша громада зібралась разом на недільному богослужінні",
+      en: "Our congregation gathered together for Sunday worship",
     },
   },
   {

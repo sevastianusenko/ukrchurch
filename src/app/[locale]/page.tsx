@@ -27,8 +27,8 @@ import { posts } from "../../../content/posts";
 const mosaicPhotos = [
   { src: "/photos/womens-retreat-2023.jpg", alt: { uk: "Жіночий реколекції «Закохана в Слово»", en: "The “In Love with the Word” women's retreat" } },
   { src: "/photos/news/baptism-2025/hero.jpg", alt: { uk: "Водне хрещення", en: "Water baptism" } },
-  { src: "/photos/camp-fellowship-2023.jpg", alt: { uk: "Спільна трапеза на таборі", en: "A shared meal at camp" } },
-  { src: "/photos/news/kids-camp-2026-recap/6.jpg", alt: { uk: "Футбол на таборі", en: "Soccer at camp" } },
+  { src: "/photos/camp-group-2023.jpg", alt: { uk: "Табірна громада разом на галявині", en: "The camp community together on the field" } },
+  { src: "/photos/camp-vbs-2023.jpg", alt: { uk: "Дитячий табір за біблійною тематикою", en: "Bible-themed kids camp" } },
   { src: "/photos/news/sisters-christmas-workshop-2025/2.jpeg", alt: { uk: "Сестринське служіння", en: "Women's ministry" } },
   { src: "/photos/news/new-year-2026/hero.jpg", alt: { uk: "Новорічна зустріч церкви", en: "Church New Year's gathering" } },
   { src: "/photos/news/christmas-caroling-2025/hero.jpg", alt: { uk: "Різдвяна коляда", en: "Christmas caroling" } },

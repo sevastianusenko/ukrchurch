@@ -91,18 +91,23 @@ themselves via Viber on July 4, 2026
 (`Downloads/viber_image_2026-07-04_11-16-21-094.jpg`), used as-is (resized
 only). Not stock, doesn't need replacing.
 
-## Homepage "Життя нашої громади" photo mosaic — two tiles swapped 2026-09-13
+## Homepage "Життя нашої громади" photo mosaic — tiles swapped twice, 2026-09-13
 
-Client asked to replace mosaic tiles #1 and #3 with other photos (no
-specific replacements named). Chosen from the client-supplied folder to
-add variety (the grid already had two kids-camp photos and one bake-sale
-photo):
+Client asked to replace mosaic tiles #1 and #3 in a first pass, then #3
+and #4 again in a second pass the same day (no specific replacements
+named either time). Chosen from the client-supplied folder to add variety
+(the grid started with two kids-camp photos and one bake-sale photo):
 - Tile #1: `/public/photos/womens-retreat-2023.jpg` ← "жіноче зустрічі.jpg",
   the women's "Закохана в Слово" ("In Love with the Word") retreat, 2023.
-- Tile #3: `/public/photos/camp-fellowship-2023.jpg` ← `табір 2023/IMG_5175.JPG`,
-  a candid shared meal at the 2023 kids camp pavilion — replaces the
-  bake-sale photo, which stayed heavy on "women baking" alongside the
-  retreat photo otherwise.
+- Tile #3: `/public/photos/camp-group-2023.jpg` ← `табір 2023/1703901677892318.jpg`,
+  the full camp community (all ages, matching camp t-shirts) posed on the
+  field. Replaces `camp-fellowship-2023.jpg` (a candid shared meal at the
+  same 2023 camp, one round earlier — that file is no longer used
+  anywhere and was deleted rather than left orphaned).
+- Tile #4: `/public/photos/camp-vbs-2023.jpg` ← `табір 2023/1703901667129334.jpg`,
+  a group photo in front of the camp's Bible-story craft set (paper
+  clouds/rain, an ark). Replaces the 2026 kids-camp soccer photo, which
+  stayed close in feel to tile #8 (also a kids-camp photo).
 
 ## Client-supplied folder `public/photos/фото української церкви/` — 2026-09-13
 
@@ -111,13 +116,16 @@ with no accompanying instructions beyond "додав new фото." Used so far:
 `хор.jpg` (originally) and later `загальне фото 1.jpg` → `worship.jpg`,
 `20260405_143945.jpg` → `sunday-school.jpg`, the New Year's group photo →
 `about.jpg` (see above), and `жіноче зустрічі.jpg` /
-`табір 2023/IMG_5175.JPG` → the homepage mosaic (see above). **Not yet
-used, still sitting in that folder** — a future session should look here
-before reaching for more stock:
+`табір 2023/1703901677892318.jpg` / `табір 2023/1703901667129334.jpg` →
+the homepage mosaic (see above). **Not yet used, still sitting in that
+folder** — a future session should look here before reaching for more
+stock:
 - `зустрічь жінок обеднання.jpg` — another women's ministry gathering
-  photo, dated Dec 2023.
-- `табір 2023/` — five more photos from the 2023 kids camp (one now used,
-  see above).
+  photo (a large outdoor group shot, likely a wider regional conference
+  rather than just this congregation), dated Dec 2023.
+- `табір 2023/` — three more photos from the 2023 kids camp (three now
+  used, see above), plus `IMG_5175.JPG`, no longer used (see tile #3
+  history above) but still sitting in the source folder.
 - `IMG_5167.HEIC` — will need converting to JPEG/PNG before it can be used
   on the web; browsers don't render HEIC.
 - `20260405_143945.mp4` and `колядники 2026.mp4` — two videos (43 MB and

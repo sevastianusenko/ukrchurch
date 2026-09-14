@@ -19,8 +19,8 @@ export const site = {
     en: "UEBC Lancaster",
   } satisfies Bi,
   tagline: {
-    uk: "Дім для української громади Ланкастера — тут ми живемо Словом Божим, молитвою та спільним життям.",
-    en: "A home for Lancaster's Ukrainian community — living by God's Word, in prayer, together.",
+    uk: "Українська євангельсько-баптистська церква в Ланкастері: богослужіння, молитва і тепла спільнота. Раді кожному, хто завітає, незалежно від віри.",
+    en: "A Ukrainian Evangelical Baptist church in Lancaster: worship, prayer, and a warm community. Everyone is welcome, whatever your background.",
   } satisfies Bi,
 };
 

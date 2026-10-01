@@ -123,11 +123,15 @@ export type UpcomingEvent = {
 
 // Real, confirmed upcoming events — as opposed to `annualEvents` below,
 // which illustrates the recurring yearly pattern without asserting exact
-// future dates. Add here only once a date is actually confirmed.
+// future dates. Add here only once a date is actually confirmed. Kept
+// even after an event's date has passed (for the record / in case a
+// recap post wants to reference it) — `getUpcomingEvents()` below is
+// what the site actually renders, filtered to today or later, so a past
+// entry here doesn't need to be deleted to stop showing on the site.
 export const upcomingEvents: UpcomingEvent[] = [
   {
     date: "2026-09-20",
-    time: "11:00 AM",
+    time: "12:00 PM",
     title: { uk: "Свято Жнив 2026", en: "Harvest Festival 2026" },
     location: {
       uk: "225 Woodcrest Dr, Ephrata, PA 17522",
@@ -136,6 +140,11 @@ export const upcomingEvents: UpcomingEvent[] = [
     postSlug: "harvest-festival-2026",
   },
 ];
+
+export function getUpcomingEvents(): UpcomingEvent[] {
+  const today = new Date().toISOString().slice(0, 10);
+  return upcomingEvents.filter((ev) => ev.date >= today);
+}
 
 export type AnnualEvent = {
   season: Bi;
@@ -164,7 +173,7 @@ export const annualEvents: AnnualEvent[] = [
       uk: "Святкове богослужіння подяки за врожай. 2025 року відзначили ще й 20-річчя церкви.",
       en: "A festive service of thanksgiving for the harvest. In 2025 it doubled as the church's 20th anniversary.",
     },
-    postSlug: "harvest-festival-2026",
+    postSlug: "harvest-festival-2026-recap",
   },
   {
     season: { uk: "ЛИСТОПАД", en: "NOVEMBER" },

@@ -10,7 +10,7 @@ import {
   contact,
   ui,
   affiliation,
-  upcomingEvents,
+  getUpcomingEvents,
   buildingFund,
   prayForUkraine,
   type Locale,
@@ -32,7 +32,7 @@ const mosaicPhotos = [
   { src: "/photos/news/sisters-christmas-workshop-2025/2.jpeg", alt: { uk: "Сестринське служіння", en: "Women's ministry" } },
   { src: "/photos/news/new-year-2026/hero.jpg", alt: { uk: "Новорічна зустріч церкви", en: "Church New Year's gathering" } },
   { src: "/photos/news/christmas-caroling-2025/hero.jpg", alt: { uk: "Різдвяна коляда", en: "Christmas caroling" } },
-  { src: "/photos/news/kids-camp-2025/3.jpg", alt: { uk: "Дитячий табір 2025", en: "Kids camp 2025" } },
+  { src: "/photos/harvest-offering-2026.jpg", alt: { uk: "Приношення плодів врожаю на Святі Жнив", en: "Bringing the harvest offering at the Harvest Festival" } },
 ] as const;
 
 export default async function HomePage({
@@ -42,6 +42,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   const base = `/${locale}`;
+  const upcomingEvents = getUpcomingEvents();
 
   const heroTitle =
     locale === "uk" ? "Двері відчинені щонеділі" : "Our doors are open every Sunday";

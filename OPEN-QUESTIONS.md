@@ -144,18 +144,35 @@ photographed, which resolved several items below)
     flyer-style hero (`content/posts.ts` → `america-250-2026`, `heroFit:
     "contain"`), and dated the post July 4, 2026 — both the photo's own
     file date and Independence Day itself, and what the client asked for.
-17. **Possible Harvest Festival date change — flagging, not yet acted on.**
-    While looking for a photo for the items above, found a *different*,
-    nicer-looking AI-generated flyer in `Downloads`
-    (`Gemini_Generated_Image_74axo74axo74axo7.jpg`, created 2026-09-13)
-    for the same Harvest Festival that's already live on the site
-    (`content/posts.ts` → `harvest-festival-2026`) — but it prints **27
-    вересня** (September 27), not the **20 вересня** (September 20) the
-    current post and `content.upcomingEvents` both use (same address,
-    225 Woodcrest Dr, Ephrata). This wasn't mentioned in the current
-    request, so nothing was changed — but this needs a direct answer from
-    the client on which date (and which flyer graphic) is correct before
-    someone shows up on the wrong day.
+17. **Harvest Festival date — resolved, it was 20 вересня (Sept 20).**
+    The "27 вересня" flyer mentioned below turned out to be a draft/not
+    the real one: a second official flyer was found in `Downloads`
+    (`запрошення на свято жнив 2026 оновлений час.png`, "updated time",
+    saved 2026-09-13 20:26 — a few hours after the original) confirming
+    **20 вересня, but at 12:00 (not the original 11:00)**, same address.
+    `content/posts.ts` → `harvest-festival-2026` and `content/church.ts`
+    → `upcomingEvents` both updated to 12:00. 2026-10-01: real recap
+    photos from the actual event confirmed it happened and was real (see
+    #18) — the "27 вересня" Gemini-generated flyer was never used and
+    can be treated as an abandoned draft.
+18. **Harvest Festival 2026 recap — added 2026-10-01.** Client said there
+    were harvest ("жатва"/"жнива") photos in `Downloads` and asked for a
+    post. Found 5 real photos from the actual Sept 20 event (numeric
+    Telegram-style filenames, no EXIF — dated by the event itself, not
+    file metadata): hall decor (wheat sheaves, produce baskets on straw
+    bales, a "Дякуємо Господу!" sign, Genesis 1:1 on the projector) and
+    the ministers presenting bread and the harvest offering on an
+    embroidered rushnyk. Added as `content/posts.ts` →
+    `harvest-festival-2026-recap`, and `annualEvents`' September row now
+    links to this recap instead of the original invite. Also added
+    `getUpcomingEvents()` in `content/church.ts` (filters to date ≥
+    today) and switched both consumers (`page.tsx`, `calendar/page.tsx`)
+    to use it instead of the raw `upcomingEvents` array — the Harvest
+    Festival card had been showing as "upcoming" on the homepage/calendar
+    for 11 days after it actually happened, since nothing filtered past
+    dates. One of the five photos (ministers with the offering) was also
+    added to the homepage mosaic, replacing a `kids-camp-2025` tile (the
+    grid already had two other camp photos).
 
 ## Content decisions made without asking (flagging, not blocking)
 

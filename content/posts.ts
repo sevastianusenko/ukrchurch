@@ -28,6 +28,59 @@ const p = (uk: string, en: string): Bi => ({ uk, en });
 
 export const posts: NewsPost[] = [
   {
+    slug: "harvest-festival-2026-recap",
+    date: "2026-09-20",
+    category: p("Свято", "Celebration"),
+    title: p("Свято Жнив 2026: фотозвіт", "Harvest Festival 2026: Photo Recap"),
+    excerpt: p(
+      "20 вересня ми зібралися подякувати Богові за врожай — зі снопами пшениці, кошиками овочів і фруктів, і хлібом на вишитому рушнику.",
+      "On September 20 we gathered to thank God for the harvest — with sheaves of wheat, baskets of fruit and vegetables, and bread on an embroidered rushnyk."
+    ),
+    hero: {
+      src: "/photos/news/harvest-festival-2026-recap/hero.jpg",
+      alt: p(
+        "Святкове оформлення залу до Свята Жнив: снопи пшениці, кошики з овочами та написом «Дякуємо Господу!»",
+        "The hall decorated for the Harvest Festival: sheaves of wheat, baskets of produce, and a “Thank You, Lord!” sign"
+      ),
+    },
+    gallery: [
+      {
+        src: "/photos/news/harvest-festival-2026-recap/2.jpg",
+        alt: p("Соняшники та кошики з хлібом і медом на сцені", "Sunflowers and baskets of bread and honey on stage"),
+      },
+      {
+        src: "/photos/news/harvest-festival-2026-recap/3.jpg",
+        alt: p("Кошики з овочами та фруктами на тюках соломи", "Baskets of vegetables and fruit on bales of straw"),
+      },
+      {
+        src: "/photos/news/harvest-festival-2026-recap/4.jpg",
+        alt: p("Ягоди, овочі та квіти біля дверей залу", "Berries, vegetables, and flowers by the hall doors"),
+      },
+      {
+        src: "/photos/news/harvest-festival-2026-recap/5.jpg",
+        alt: p(
+          "Служителі церкви приносять хліб та плоди врожаю на вишитому рушнику",
+          "Church ministers bringing bread and the fruits of the harvest on an embroidered rushnyk"
+        ),
+      },
+    ],
+    body: [
+      p(
+        "20 вересня наша церква зібралася на Свято Жнив — щорічне богослужіння подяки Богові за врожай, Його щедрість і вірність протягом року.",
+        "On September 20, our church gathered for the Harvest Festival — our annual service of thanksgiving to God for the harvest, and for His generosity and faithfulness throughout the year."
+      ),
+      p(
+        "Зал був прикрашений снопами пшениці, кошиками овочів і фруктів на тюках соломи, соняшниками та квітами — нагадування про те, що кожен добрий дар походить від Господа.",
+        "The hall was decorated with sheaves of wheat, baskets of fruit and vegetables on bales of straw, sunflowers, and flowers — a reminder that every good gift comes from the Lord."
+      ),
+      p(
+        "Служителі церкви піднесли хліб і плоди врожаю на вишитому рушнику, як знак подяки за все, чим Бог благословив нашу громаду цього року.",
+        "Our ministers brought forward bread and the fruits of the harvest on an embroidered rushnyk, as a sign of thanks for everything God has blessed our congregation with this year."
+      ),
+      p("Дякуємо всім, хто готував і прикрашав, і всім, хто прийшов святкувати разом з нами!", "Thank you to everyone who prepared and decorated, and to everyone who came to celebrate with us!"),
+    ],
+  },
+  {
     slug: "ukrainian-study-bible-2026",
     date: "2026-07-15",
     category: p("Оголошення", "Announcement"),
@@ -206,8 +259,8 @@ export const posts: NewsPost[] = [
     category: p("Свято", "Celebration"),
     title: p("Свято Жнив 2026", "Harvest Festival 2026"),
     excerpt: p(
-      "20 вересня о 11:00: разом подякуємо Богові за щедрі дари та Його вірність. Ephrata, PA.",
-      "September 20 at 11:00 AM: let's give thanks together for God's generous gifts and faithfulness. Ephrata, PA."
+      "20 вересня о 12:00: разом подякуємо Богові за щедрі дари та Його вірність. Ephrata, PA.",
+      "September 20 at 12:00 PM: let's give thanks together for God's generous gifts and faithfulness. Ephrata, PA."
     ),
     hero: {
       src: "/photos/news/harvest-festival-2026/hero.png",
@@ -220,8 +273,8 @@ export const posts: NewsPost[] = [
         "The Ukrainian Evangelical Baptist Church of Lancaster warmly invites you to our Harvest Festival. Let's give thanks together to God for His generous gifts and faithfulness!"
       ),
       p(
-        "Дата: 20 вересня. Час: 11:00. Місце: 225 Woodcrest Dr, Ephrata, PA 17522 (Woodcrest).",
-        "Date: September 20. Time: 11:00 AM. Location: 225 Woodcrest Dr, Ephrata, PA 17522 (Woodcrest)."
+        "Дата: 20 вересня. Час: 12:00. Місце: 225 Woodcrest Dr, Ephrata, PA 17522 (Woodcrest).",
+        "Date: September 20. Time: 12:00 PM. Location: 225 Woodcrest Dr, Ephrata, PA 17522 (Woodcrest)."
       ),
       p("Будемо раді бачити вас!", "We'd love to see you there!"),
     ],

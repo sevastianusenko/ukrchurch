@@ -172,6 +172,13 @@ stock, and don't need replacing:
   resized from ~4000×3000 to ~2000×1500 to keep file size reasonable
   (originals were 4–7 MB each). The client also said they uploaded video —
   none was found; see OPEN-QUESTIONS.md #12.
+- `harvest-festival-2026-recap/*.jpg` (5 files, 2026-10-01) — real photos
+  from the actual Sept 20 event: hall decor and the ministers presenting
+  the harvest offering. Numeric Telegram-style filenames in `Downloads`,
+  no EXIF metadata (common for app-compressed exports). One of the five
+  (the ministers-with-offering shot) was also copied to
+  `/public/photos/harvest-offering-2026.jpg` and used in the homepage
+  mosaic — see OPEN-QUESTIONS.md #18.
 
 They're scoped to their own news posts only; none of them were reused on
 evergreen pages (like the Ministries grid) except the one explicit swap

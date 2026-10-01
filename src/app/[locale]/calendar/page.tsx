@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { schedule, annualEvents, upcomingEvents, googleCalendar, ui, type Locale } from "../../../../content/church";
+import { schedule, annualEvents, getUpcomingEvents, googleCalendar, ui, type Locale } from "../../../../content/church";
 import RushnykDivider from "../../../components/RushnykDivider";
 import GoogleCalendarEmbed from "../../../components/GoogleCalendarEmbed";
 import SocialLinks from "../../../components/SocialLinks";
@@ -21,6 +21,7 @@ export default async function CalendarPage({
   params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
+  const upcomingEvents = getUpcomingEvents();
 
   return (
     <>

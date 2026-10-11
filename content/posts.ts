@@ -28,6 +28,49 @@ const p = (uk: string, en: string): Bi => ({ uk, en });
 
 export const posts: NewsPost[] = [
   {
+    slug: "baptism-2026",
+    date: "2026-07-12",
+    category: p("Служіння", "Ministry"),
+    title: p("Урочисте водне хрещення", "A Sacred Water Baptism"),
+    excerpt: p(
+      "Під відкритим небом, біля хреста, кілька братів і сестер публічно засвідчили свою віру в Ісуса Христа і прийняли хрещення.",
+      "Under the open sky, by the cross, several brothers and sisters publicly testified to their faith in Jesus Christ and were baptized."
+    ),
+    hero: {
+      src: "/photos/news/baptism-2026/hero.jpg",
+      alt: p("Пастори, кандидати на хрещення та громада біля хреста", "Pastors, baptism candidates, and the congregation gathered by the cross"),
+    },
+    gallery: [
+      { src: "/photos/news/baptism-2026/2.jpg", alt: p("Пастор у воді перед хрещенням", "A pastor in the water before the baptism") },
+      { src: "/photos/news/baptism-2026/3.jpg", alt: p("Момент хрещення у басейні", "The moment of baptism in the pool") },
+      { src: "/photos/news/baptism-2026/4.jpg", alt: p("Пастори та новохрещений біля хреста", "The pastors and a newly baptized believer by the cross") },
+      { src: "/photos/news/baptism-2026/5.jpg", alt: p("Родина з квітами після хрещення", "A family with flowers after the baptism") },
+      { src: "/photos/news/baptism-2026/6.jpg", alt: p("Родина новохрещеного з квітами біля хреста", "The newly baptized believer's family with flowers by the cross") },
+    ],
+    body: [
+      p(
+        "Цього літа, під відкритим небом і біля хреста, у нашій церкві відбулося святе водне хрещення — подія, яка завжди є особливим благословенням для всієї громади.",
+        "This summer, under the open sky and by the cross, our church held a sacred water baptism — an occasion that is always a special blessing for the whole congregation."
+      ),
+      p(
+        "Кілька братів і сестер публічно засвідчили свою віру в Ісуса Христа та готовність слідувати за Ним усім серцем, прийнявши хрещення перед усією церквою.",
+        "Several brothers and sisters publicly testified to their faith in Jesus Christ and their readiness to follow Him with their whole heart, being baptized before the entire church."
+      ),
+      p(
+        "Після хрещення родини й близькі вітали новохрещених квітами — щирий, теплий момент спільної радості.",
+        "After the baptism, families and loved ones congratulated those newly baptized with flowers — a sincere, warm moment of shared joy."
+      ),
+      p(
+        "«Чи ви не знаєте, що ми всі, хто христився у Христа Ісуса, у смерть Його христилися? Отож, ми поховані з Ним хрищенням у смерть, щоб, як воскрес Христос із мертвих славою Отця, так щоб і ми стали ходити в обновленні життя.» (Римлян 6:3-4)",
+        "“Do you not know that all of us who were baptized into Christ Jesus were baptized into his death? We were therefore buried with him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may live a new life.” (Romans 6:3-4)"
+      ),
+      p(
+        "Церква радіє разом із небом і молиться, щоб життя кожного новохрещеного було сповнене духовного зростання, мудрості, сили та служіння Господу!",
+        "The church rejoices together with heaven and prays that the life of each newly baptized believer will be filled with spiritual growth, wisdom, strength, and service to the Lord!"
+      ),
+    ],
+  },
+  {
     slug: "baby-mark-2026",
     date: "2026-10-11",
     category: p("Спільнота", "Community"),

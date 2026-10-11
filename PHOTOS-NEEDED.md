@@ -195,6 +195,12 @@ stock, and don't need replacing:
   a group photo with no name tags, so it's captioned with all three
   pastors' names together rather than matched face-to-name — see
   OPEN-QUESTIONS.md #2.
+- `baptism-2026/*.jpg` (6 files, 2026-10-11) — real photos of the same
+  summer baptism service that `pastor-appreciation-2026/3.jpg` came
+  from: the baptism itself in the pool, the pastors and candidates by
+  the cross, and families with flowers afterward. **Date is an
+  unconfirmed placeholder (2026-07-12)** — see OPEN-QUESTIONS.md #19.
+  Candidates' names weren't given, so the post doesn't name them.
 
 They're scoped to their own news posts only; none of them were reused on
 evergreen pages (like the Ministries grid) except the one explicit swap

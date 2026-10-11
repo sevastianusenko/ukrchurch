@@ -180,6 +180,23 @@ photographed, which resolved several items below)
     dates. One of the five photos (ministers with the offering) was also
     added to the homepage mosaic, replacing a `kids-camp-2025` tile (the
     grid already had two other camp photos).
+19. **Baptism 2026 — added 2026-10-11, date is a rough guess, please
+    confirm.** After adding the Pastor Appreciation post, the client said
+    to use *all* the downloaded photos — among them was a second,
+    previously-unused batch (6 photos) from a real summer baptism service
+    (same pastors, same outdoor pool/cross site as the Pastor Appreciation
+    photos, but clearly warmer weather and different clothing — a
+    separate, earlier occasion). Added as `content/posts.ts` →
+    `baptism-2026`. **Unlike every other estimated date in this file,
+    this one has no supporting evidence at all beyond the foliage and
+    clothing looking like summer** — no flyer, no bulletin, no
+    filename timestamp (these numeric Telegram-export files carry no
+    EXIF). Dated 2026-07-12 purely as a placeholder; please confirm or
+    correct the real date before this is considered final. Candidates'
+    names are also unknown, so the post describes them generically
+    ("кілька братів і сестер"/"several brothers and sisters") rather than
+    inventing names, unlike the baptism-2025 post which named Vitaliy and
+    Danyil from the original migrated content.
 
 ## Content decisions made without asking (flagging, not blocking)
 

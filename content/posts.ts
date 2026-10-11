@@ -64,8 +64,8 @@ export const posts: NewsPost[] = [
     category: p("Свято", "Celebration"),
     title: p("З Днем пастора!", "Happy Pastor Appreciation Day!"),
     excerpt: p(
-      "Сьогодні громада подякувала нашим пасторам Віктору, Леоніду та Кирилу за їхнє служіння, турботу й вірність.",
-      "Today the congregation thanked our pastors Viktor, Leonid, and Kyrylo for their ministry, care, and faithfulness."
+      "Дорогі наші пастори Вікторе, Леоніде та Кириле! Сердечно вітаємо вас із Днем пастора і дякуємо за ваше служіння.",
+      "Dear pastors Viktor, Leonid, and Kyrylo! We warmly congratulate you on Pastor Appreciation Day and thank you for your ministry."
     ),
     hero: {
       src: "/photos/news/pastor-appreciation-2026/hero.jpg",
@@ -76,15 +76,23 @@ export const posts: NewsPost[] = [
         src: "/photos/news/pastor-appreciation-2026/2.jpg",
         alt: p("Громада молиться за пасторів біля кафедри", "The congregation praying over the pastors by the pulpit"),
       },
+      {
+        src: "/photos/news/pastor-appreciation-2026/3.jpg",
+        alt: p("Наші пастори біля хреста на місці хрещень", "Our pastors by the cross at the baptism site"),
+      },
     ],
     body: [
       p(
-        "Сьогодні, у День пастора, наша громада мала особливу нагоду подякувати нашим пасторам — Віктору, Леоніду та Кирилу — за їхнє віддане служіння, молитви та турботу про церкву.",
-        "Today, on Pastor Appreciation Day, our congregation had a special opportunity to thank our pastors — Viktor, Leonid, and Kyrylo — for their dedicated ministry, prayers, and care for the church."
+        "Дорогі наші пастори Вікторе, Леоніде та Кириле! Сьогодні, у День пастора, уся наша громада з радістю вітає вас і дякує Богові за кожного з вас.",
+        "Dear pastors Viktor, Leonid, and Kyrylo! Today, on Pastor Appreciation Day, our whole congregation joyfully congratulates you and thanks God for each one of you."
       ),
       p(
-        "Церква подарувала пасторам квіти та помолилася за них і їхні родини, просячи Бога зміцнити їх мудрістю, миром і силою для служіння.",
-        "The church presented the pastors with flowers and prayed over them and their families, asking God to strengthen them with wisdom, peace, and strength for ministry."
+        "Дякуємо за ваше покликання, за ваші молитви, мудрі поради та вірне, самовіддане служіння нашій церкві. Ви щодня показуєте нам живий приклад віри, терпіння й любові до Бога та людей.",
+        "Thank you for your calling, for your prayers, wise counsel, and faithful, self-giving service to our church. Every day you show us a living example of faith, patience, and love for God and people."
+      ),
+      p(
+        "Бажаємо вам міцного здоров'я, Божої мудрості та сили на кожен день, миру в серці і радості в служінні. Нехай Господь рясно благословляє вас, ваші родини і все, за що ви беретеся.",
+        "We wish you good health, God's wisdom and strength for every day, peace in your hearts, and joy in ministry. May the Lord richly bless you, your families, and everything you put your hand to."
       ),
       p(
         "«Добре паси отару Божу» (1 Петра 5:2). Дякуємо Богові за ваше покликання, і дякуємо вам за вірне служіння нашій громаді!",

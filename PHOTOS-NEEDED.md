@@ -182,8 +182,12 @@ stock, and don't need replacing:
 - `baby-mark-2026/hero.jpg` and `pastor-appreciation-2026/*.jpg`
   (2026-10-11) — real photos from that Sunday: a baby dedication/blessing
   (baby Mark, Denys and Anya's family) and the congregation honoring the
-  three pastors for Pastor Appreciation Day. The pastor-appreciation
-  hero was also copied to `/public/photos/pastors.jpg`, replacing the
+  three pastors for Pastor Appreciation Day. `pastor-appreciation-2026/3.jpg`
+  (added after the client said to use all the downloaded photos) is from
+  a different, earlier occasion — a summer baptism service, same three
+  pastors by the outdoor cross — not from Oct 11 itself; its alt text
+  doesn't claim otherwise. The pastor-appreciation hero was also copied
+  to `/public/photos/pastors.jpg`, replacing the
   `PhotoPlaceholder` that used to sit on `/about`'s "Pastoral leadership"
   section (that placeholder component file is now unused there, but
   stays in the codebase since `GoogleCalendarEmbed` still uses it) — and

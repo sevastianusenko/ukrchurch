@@ -11,14 +11,21 @@ photographed, which resolved several items below)
    photographed by the client) lists "ВІВТОРОК - МОЛИТОВНЕ СЛУЖІННЯ
    (ZOOM) - 08:30" — a current, primary-source confirmation. Updated
    `content/church.ts` → `schedule` from 8:00 to 8:30 PM. No longer open.
-2. **Pastor's surnames — one resolved.** The same 2026-08-30 bulletin
-   lists that Sunday's preachers: "ПРОПОВІДЬ: п. Близнюк Леонід" (пастор
-   Leonid **Bliznyuk**) and "ПРОПОВІДЬ: Луценко Володимир" (Volodymyr
-   **Lutsenko**, no "п." title shown — unclear if he's clergy or a member
-   preaching that day). `content/church.ts` → `pastors` now reads "Віктор,
-   Леонід Близнюк, Кирило" — Viktor's and Kyrylo's surnames, everyone's
-   role/title, and photos are still needed. Also confirm whether Volodymyr
-   Lutsenko should be added as a fourth name.
+2. **Pastor's surnames — one resolved; photo now resolved too.** The same
+   2026-08-30 bulletin lists that Sunday's preachers: "ПРОПОВІДЬ: п.
+   Близнюк Леонід" (пастор Leonid **Bliznyuk**) and "ПРОПОВІДЬ: Луценко
+   Володимир" (Volodymyr **Lutsenko**, no "п." title shown — unclear if
+   he's clergy or a member preaching that day). `content/church.ts` →
+   `pastors` still reads "Віктор, Леонід Близнюк, Кирило" — Viktor's and
+   Kyrylo's surnames and everyone's specific role/title are still needed.
+   **Photo resolved 2026-10-11:** real Pastor Appreciation Day photos
+   (`public/photos/pastors.jpg`, from `content/posts.ts` →
+   `pastor-appreciation-2026`) now show all three pastors together on
+   `/about` and the homepage — but the photo is a group shot with no
+   name tags, so it is captioned with all three names together, not
+   matched face-to-name. If individual portraits/captions are wanted
+   later, ask the client which face is which. Also still open: confirm
+   whether Volodymyr Lutsenko should be added as a fourth name.
 3. **Founding history — two stories, not yet reconciled.** The church's
    2025 posts put founding at **c. 2005** (20th anniversary, 2025-09-21 —
    this is what's on the site now, `foundingYear` in `content/church.ts`).

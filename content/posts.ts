@@ -28,6 +28,71 @@ const p = (uk: string, en: string): Bi => ({ uk, en });
 
 export const posts: NewsPost[] = [
   {
+    slug: "baby-mark-2026",
+    date: "2026-10-11",
+    category: p("Спільнота", "Community"),
+    title: p("Вітаємо родину Дениса та Ані з народженням сина!", "Congratulations to Denys and Anya's Family on Their New Son!"),
+    excerpt: p(
+      "Радіємо разом з родиною Дениса та Ані: у них народився син Марк. Громада молилася за малюка на недільному богослужінні.",
+      "We're rejoicing with Denys and Anya's family: their son Mark was born. The congregation prayed over him during Sunday worship."
+    ),
+    hero: {
+      src: "/photos/news/baby-mark-2026/hero.jpg",
+      alt: p(
+        "Родина Дениса та Ані з немовлям Марком отримує молитву благословення в церкві",
+        "Denys and Anya's family with baby Mark receiving a prayer of blessing at church"
+      ),
+    },
+    body: [
+      p(
+        "З великою радістю вітаємо родину Дениса та Ані з народженням сина Марка! Господь благословив їхню родину новим життям.",
+        "With great joy we congratulate Denys and Anya's family on the birth of their son, Mark! The Lord has blessed their family with new life."
+      ),
+      p(
+        "Під час недільного богослужіння громада молилася за малюка Марка та його родину, просячи Божого благословення, здоров'я та мудрості для батьків.",
+        "During Sunday worship, the congregation prayed over baby Mark and his family, asking for God's blessing, health, and wisdom for his parents."
+      ),
+      p(
+        "Нехай Господь береже цю родину і веде маленького Марка Своєю любов'ю на кожному кроці. Вітаємо!",
+        "May the Lord keep this family and guide little Mark with His love at every step. Congratulations!"
+      ),
+    ],
+  },
+  {
+    slug: "pastor-appreciation-2026",
+    date: "2026-10-11",
+    category: p("Свято", "Celebration"),
+    title: p("З Днем пастора!", "Happy Pastor Appreciation Day!"),
+    excerpt: p(
+      "Сьогодні громада подякувала нашим пасторам Віктору, Леоніду та Кирилу за їхнє служіння, турботу й вірність.",
+      "Today the congregation thanked our pastors Viktor, Leonid, and Kyrylo for their ministry, care, and faithfulness."
+    ),
+    hero: {
+      src: "/photos/news/pastor-appreciation-2026/hero.jpg",
+      alt: p("Наші пастори отримують квіти від громади з Днем пастора", "Our pastors receiving flowers from the congregation for Pastor Appreciation Day"),
+    },
+    gallery: [
+      {
+        src: "/photos/news/pastor-appreciation-2026/2.jpg",
+        alt: p("Громада молиться за пасторів біля кафедри", "The congregation praying over the pastors by the pulpit"),
+      },
+    ],
+    body: [
+      p(
+        "Сьогодні, у День пастора, наша громада мала особливу нагоду подякувати нашим пасторам — Віктору, Леоніду та Кирилу — за їхнє віддане служіння, молитви та турботу про церкву.",
+        "Today, on Pastor Appreciation Day, our congregation had a special opportunity to thank our pastors — Viktor, Leonid, and Kyrylo — for their dedicated ministry, prayers, and care for the church."
+      ),
+      p(
+        "Церква подарувала пасторам квіти та помолилася за них і їхні родини, просячи Бога зміцнити їх мудрістю, миром і силою для служіння.",
+        "The church presented the pastors with flowers and prayed over them and their families, asking God to strengthen them with wisdom, peace, and strength for ministry."
+      ),
+      p(
+        "«Добре паси отару Божу» (1 Петра 5:2). Дякуємо Богові за ваше покликання, і дякуємо вам за вірне служіння нашій громаді!",
+        "“Shepherd the flock of God” (1 Peter 5:2). We thank God for your calling, and we thank you for your faithful service to our congregation!"
+      ),
+    ],
+  },
+  {
     slug: "harvest-festival-2026-recap",
     date: "2026-09-20",
     category: p("Свято", "Celebration"),

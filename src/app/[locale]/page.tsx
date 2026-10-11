@@ -13,6 +13,8 @@ import {
   getUpcomingEvents,
   buildingFund,
   prayForUkraine,
+  pastors,
+  pastorsEn,
   type Locale,
 } from "../../../content/church";
 import RushnykDivider from "../../components/RushnykDivider";
@@ -153,6 +155,44 @@ export default async function HomePage({
               <p className="mt-2 text-sm leading-relaxed text-charcoal/70">{v.body[locale]}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Pastors teaser */}
+      <section className="mx-auto max-w-6xl px-5 pb-20">
+        <div className="flex flex-col items-start gap-8 rounded-3xl bg-ink p-8 ring-1 ring-charcoal/5 sm:flex-row sm:items-center sm:p-10">
+          <div className="relative h-48 w-full shrink-0 overflow-hidden rounded-2xl sm:h-40 sm:w-40">
+            <Image
+              src="/photos/pastors.jpg"
+              alt={
+                locale === "uk"
+                  ? "Наші пастори отримують квіти від громади"
+                  : "Our pastors receiving flowers from the congregation"
+              }
+              fill
+              sizes="(min-width: 640px) 160px, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="flex-1">
+            <p className="font-body text-xs font-bold tracking-[0.15em] text-amber-soft">
+              {locale === "uk" ? "ПАСТОРСЬКЕ СЛУЖІННЯ" : "PASTORAL LEADERSHIP"}
+            </p>
+            <h2 className="mt-2 font-display text-2xl font-semibold text-wheat">
+              {(locale === "uk" ? pastors : pastorsEn).join(", ")}
+            </h2>
+            <p className="mt-2 max-w-xl text-wheat/75">
+              {locale === "uk"
+                ? "Познайомтесь з нашими пасторами та дізнайтесь більше про церкву."
+                : "Meet our pastors and learn more about the church."}
+            </p>
+          </div>
+          <Link
+            href={`${base}/about`}
+            className="shrink-0 rounded-full bg-amber px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-amber-soft"
+          >
+            {locale === "uk" ? "Про нас" : "About us"}
+          </Link>
         </div>
       </section>
 

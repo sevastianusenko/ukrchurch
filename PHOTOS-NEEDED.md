@@ -179,6 +179,18 @@ stock, and don't need replacing:
   (the ministers-with-offering shot) was also copied to
   `/public/photos/harvest-offering-2026.jpg` and used in the homepage
   mosaic — see OPEN-QUESTIONS.md #18.
+- `baby-mark-2026/hero.jpg` and `pastor-appreciation-2026/*.jpg`
+  (2026-10-11) — real photos from that Sunday: a baby dedication/blessing
+  (baby Mark, Denys and Anya's family) and the congregation honoring the
+  three pastors for Pastor Appreciation Day. The pastor-appreciation
+  hero was also copied to `/public/photos/pastors.jpg`, replacing the
+  `PhotoPlaceholder` that used to sit on `/about`'s "Pastoral leadership"
+  section (that placeholder component file is now unused there, but
+  stays in the codebase since `GoogleCalendarEmbed` still uses it) — and
+  added to a new homepage "Pastoral leadership" teaser section too. It's
+  a group photo with no name tags, so it's captioned with all three
+  pastors' names together rather than matched face-to-name — see
+  OPEN-QUESTIONS.md #2.
 
 They're scoped to their own news posts only; none of them were reused on
 evergreen pages (like the Ministries grid) except the one explicit swap

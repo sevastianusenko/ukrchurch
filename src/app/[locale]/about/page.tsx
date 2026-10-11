@@ -16,7 +16,6 @@ import {
   type Locale,
 } from "../../../../content/church";
 import RushnykDivider from "../../../components/RushnykDivider";
-import PhotoPlaceholder from "../../../components/PhotoPlaceholder";
 import ScriptureQuote from "../../../components/ScriptureQuote";
 import FaithAccordion from "../../../components/FaithAccordion";
 
@@ -131,14 +130,20 @@ export default async function AboutPage({
 
       {/* Pastoral leadership */}
       <section className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
-        <div className="grid gap-8 sm:grid-cols-[220px_1fr] sm:items-center">
-          <PhotoPlaceholder
-            label={
-              locale === "uk"
-                ? "Фото пасторів: надішліть, коли буде готово"
-                : "Pastors' photo: send when ready"
-            }
-          />
+        <div className="grid gap-8 sm:grid-cols-[280px_1fr] sm:items-center">
+          <div className="relative aspect-square overflow-hidden rounded-2xl sm:aspect-[4/5]">
+            <Image
+              src="/photos/pastors.jpg"
+              alt={
+                locale === "uk"
+                  ? "Наші пастори отримують квіти від громади"
+                  : "Our pastors receiving flowers from the congregation"
+              }
+              fill
+              sizes="(min-width: 640px) 280px, 100vw"
+              className="object-cover"
+            />
+          </div>
           <div>
             <p className="font-body text-xs font-bold tracking-[0.15em] text-poppy">
               {locale === "uk" ? "ПАСТОРСЬКЕ СЛУЖІННЯ" : "PASTORAL LEADERSHIP"}
@@ -148,8 +153,8 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 max-w-xl text-charcoal/75">
               {locale === "uk"
-                ? "Прізвища, служіння кожного та фото ще будуть додані. Завітайте в неділю і познайомтесь особисто."
-                : "Surnames, each one's role, and photos are still to come. Come by on a Sunday and meet them in person."}
+                ? "Прізвища та служіння кожного ще будуть додані. Завітайте в неділю і познайомтесь особисто."
+                : "Each pastor's surname and role are still to come. Come by on a Sunday and meet them in person."}
             </p>
           </div>
         </div>

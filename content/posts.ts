@@ -123,6 +123,30 @@ export const posts: NewsPost[] = [
         src: "/photos/news/pastor-appreciation-2026/3.jpg",
         alt: p("Наші пастори біля хреста на місці хрещень", "Our pastors by the cross at the baptism site"),
       },
+      {
+        src: "/photos/news/baptism-2026/hero.jpg",
+        alt: p("Пастори, кандидати на хрещення та громада біля хреста", "Pastors, baptism candidates, and the congregation gathered by the cross"),
+      },
+      {
+        src: "/photos/news/baptism-2026/2.jpg",
+        alt: p("Пастор у воді перед хрещенням", "A pastor in the water before the baptism"),
+      },
+      {
+        src: "/photos/news/baptism-2026/3.jpg",
+        alt: p("Момент хрещення у басейні", "The moment of baptism in the pool"),
+      },
+      {
+        src: "/photos/news/baptism-2026/4.jpg",
+        alt: p("Пастори та новохрещений біля хреста", "The pastors and a newly baptized believer by the cross"),
+      },
+      {
+        src: "/photos/news/baptism-2026/5.jpg",
+        alt: p("Родина з квітами після хрещення", "A family with flowers after the baptism"),
+      },
+      {
+        src: "/photos/news/baptism-2026/6.jpg",
+        alt: p("Родина новохрещеного з квітами біля хреста", "The newly baptized believer's family with flowers by the cross"),
+      },
     ],
     body: [
       p(
@@ -140,6 +164,10 @@ export const posts: NewsPost[] = [
       p(
         "«Добре паси отару Божу» (1 Петра 5:2). Дякуємо Богові за ваше покликання, і дякуємо вам за вірне служіння нашій громаді!",
         "“Shepherd the flock of God” (1 Peter 5:2). We thank God for your calling, and we thank you for your faithful service to our congregation!"
+      ),
+      p(
+        "Нижче — ще кілька світлин вашого служіння, зокрема з нещодавнього водного хрещення.",
+        "Below are a few more photos from your ministry, including a recent water baptism."
       ),
     ],
   },

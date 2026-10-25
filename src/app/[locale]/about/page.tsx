@@ -152,8 +152,8 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 max-w-xl text-charcoal/75">
               {locale === "uk"
-                ? "Служіння кожного та прізвище пастора Кирила ще будуть додані. Завітайте в неділю і познайомтесь особисто."
-                : "Each pastor's role, and Pastor Kyrylo's surname, are still to come. Come by on a Sunday and meet them in person."}
+                ? "Завітайте в неділю і познайомтесь з нашими пасторами особисто."
+                : "Come by on a Sunday and meet our pastors in person."}
             </p>
           </div>
         </div>

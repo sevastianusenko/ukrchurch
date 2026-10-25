@@ -10,7 +10,11 @@ written history now in hand, see #3)
    photographed by the client) lists "ВІВТОРОК - МОЛИТОВНЕ СЛУЖІННЯ
    (ZOOM) - 08:30" — a current, primary-source confirmation. Updated
    `content/church.ts` → `schedule` from 8:00 to 8:30 PM. No longer open.
-2. **Pastor's surnames — one resolved; photo now resolved too.** The same
+2. **Pastor's surnames — all three resolved 2026-10-24:** Віктор Щипайло
+   (church history PDF), Леонід Близнюк (bulletin, below), Кирило
+   Столяров (client). English spellings "Shchypailo"/"Stoliarov" are
+   standard transliterations; confirm if the pastors spell them
+   differently. Original note follows. The same
    2026-08-30 bulletin lists that Sunday's preachers: "ПРОПОВІДЬ: п.
    Близнюк Леонід" (пастор Leonid **Bliznyuk**) and "ПРОПОВІДЬ: Луценко
    Володимир" (Volodymyr **Lutsenko**, no "п." title shown — unclear if
@@ -238,32 +242,31 @@ written history now in hand, see #3)
 
 21. **Library (`/library`) added 2026-10-24 — publishing rights need a
     yes.** The client dropped 84 files in `Downloads` "to go on the site."
-    78 are now on `/library` with an on-site PDF.js reader
-    (`content/library.ts`, files in `public/library/`). Please confirm:
-    - **Copyright.** The six books (BEE International, Vikhlyantsev,
-      Dekhtyarenko ×2, Charles Brock, Zhuromsky's interlinear NT) and the
-      four magazines («Вісник Правди», «Свічник», «За євангельську віру»,
-      «Разумный замысел») are third-party publications, several marked
-      "All rights reserved". They're widely shared in churches, but the
-      church should be sure it may host them publicly. Easy to pull any
-      single item: delete its entry in `content/library.ts` and its PDF.
+    78 went up on `/library` with an on-site PDF.js reader
+    (`content/library.ts`, files in `public/library/`). **Same day the
+    client said to remove the books and everything in Russian**: the six
+    (Russian-language) books and the 17 issues of the Russian newspaper
+    «Разумный замысел» were deleted, leaving 55 items (2 church documents
+    + «Вісник Правди», «Свічник», «За євангельську віру»). Please confirm:
+    - **Copyright.** The three remaining magazines are third-party
+      publications. They're widely shared in churches, but the church
+      should be sure it may host them publicly. Easy to pull any single
+      issue: delete its entry in `content/library.ts` and its PDF. (The
+      removed PDFs are still in the GitHub repo's history from commit
+      `f1a3789`.)
     - **Статут.** The supplied PDF is a print-ready booklet (pages paired
       28|1, 2|27…); the on-site copy was re-ordered 1–28 for reading, text
       untouched. Its adoption date is printed blank ("«__» «___» 2007
       року"). Confirm it's the current statute and meant to be public.
-    - **Not added:** `Вайнгрин Д. Введение в текстологию Ветхого
-      Завета.pdf` is a 321-byte iPhone Mail placeholder, not the real
-      ~9 MB file (re-download it from the email). `Програмка_25 ЖОВТНЯ_
-      2026.pub` is a Publisher file, not a book (export to PDF if it should
-      go up). Byte-identical duplicates were skipped (`2011_0*_za_viru_1`,
-      `Святий Дух_ Дехтеренко`).
+    - **Not added:** `Програмка_25 ЖОВТНЯ_2026.pub` is a Publisher file,
+      not a magazine (export to PDF if it should go up). Byte-identical
+      duplicates were skipped (`2011_0*_za_viru_1`). The Russian book
+      `Вайнгрин…pdf` was an empty iPhone Mail placeholder, and is out of
+      scope now anyway.
     - **Labels** come only from each PDF's own cover/masthead/imprint.
-      «Разумный замысел» file `0.pdf` is issue №1 (Nov 2006, printed as
-      «Вселенная как мысль»); issues 2–8 print no date, so none is shown.
-      Issue №13's imprint misprints itself as "№ 12"; its masthead says
-      №1 (13), so it's listed as №13. «Свічник» 1/2010 has no cover page
-      in the supplied file.
-    - **Size.** ~250 MB of PDFs now live in the repo; the largest single
+      «Свічник» 1/2010 has no cover page in the supplied file, and it and
+      «Вісник Правди» 3/2010 print no running number, so none is shown.
+    - **Size.** ~200 MB of PDFs now live in the repo; the largest single
       file is 19 MB. If Vercel or GitHub ever push back on size, move
       `public/library/*.pdf` to Vercel Blob and point `pdfPath()` at it.
 

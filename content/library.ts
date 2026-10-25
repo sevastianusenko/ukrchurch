@@ -1,12 +1,12 @@
-// Library (Бібліотека): magazines, books and church documents the client
-// supplied as PDFs on 2026-10-24. Files live in public/library/<slug>.pdf,
-// covers (page 1, rendered 400px wide) in public/library/covers/<slug>.jpg.
+// Library (Бібліотека): magazines and church documents the client supplied
+// as PDFs on 2026-10-24. Files live in public/library/<slug>.pdf, covers
+// (page 1, rendered 400px wide) in public/library/covers/<slug>.jpg.
 //
 // Every title, publisher, issue number and date below is read off the PDF
 // itself (cover, masthead or imprint). Where an issue doesn't print its
-// running number or date, it's left out rather than inferred. Book titles
-// stay in their original Russian in both locales; the English note gives a
-// translation. Publishing permission for the third-party books and
+// running number or date, it's left out rather than inferred. Everything
+// here is in Ukrainian: on 2026-10-24 the client asked to remove the books
+// and anything in Russian. Publishing permission for the third-party
 // magazines is still unconfirmed — see OPEN-QUESTIONS.md.
 
 import type { Bi, Locale } from "./church";
@@ -31,12 +31,9 @@ export type LibraryItem = {
 
 export type LibraryCollection = {
   id: string;
-  kind: "church" | "books" | "magazine";
+  kind: "church" | "magazine";
   title: Bi;
   description: Bi;
-  language: "uk" | "ru";
-  /** Show issues under year headings (only when every issue is dated). */
-  groupByYear?: boolean;
   items: LibraryItem[];
 };
 
@@ -50,7 +47,7 @@ const MONTHS: { uk: string[]; en: string[] } = {
   en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
 };
 
-// One magazine/newspaper issue. `total` is the running number some
+// One magazine issue. `total` is the running number some
 // mastheads print in brackets, e.g. №1 (91); `month` is 1–12.
 function issue(
   magazine: Bi,
@@ -92,7 +89,6 @@ function issue(
 const VP: Bi = { uk: "«Вісник Правди»", en: "Visnyk Pravdy" };
 const SV: Bi = { uk: "«Свічник»", en: "Svichnyk" };
 const ZV: Bi = { uk: "«За євангельську віру»", en: "Za Yevanhelsku Viru" };
-const RZ: Bi = { uk: "«Разумный замысел»", en: "Razumnyy Zamysel" };
 
 export const library: LibraryCollection[] = [
   {
@@ -103,7 +99,6 @@ export const library: LibraryCollection[] = [
       uk: "Історія нашої церкви, записана у 2025 році, і статут церкви.",
       en: "The history of our church, written down in 2025, and the church's statute (bylaws).",
     },
-    language: "uk",
     items: [
       {
         slug: "church-history-2025",
@@ -137,105 +132,13 @@ export const library: LibraryCollection[] = [
     ],
   },
   {
-    id: "books",
-    kind: "books",
-    title: { uk: "Книги", en: "Books" },
-    description: {
-      uk: "Книги для вивчення Біблії та служіння.",
-      en: "Books for Bible study and ministry.",
-    },
-    language: "ru",
-    items: [
-      {
-        slug: "podstrochnyy-novyy-zavet",
-        label: { uk: "Подстрочный греческо-русский Новый Завет", en: "Подстрочный греческо-русский Новый Завет" },
-        title: { uk: "Подстрочный греческо-русский Новый Завет", en: "Подстрочный греческо-русский Новый Завет" },
-        byline: { uk: "Під редакцією Віктора Журомського", en: "Edited by Viktor Zhuromsky" },
-        note: {
-          uk: "Грецький текст Stephanus 1550 (Textus Receptus) з дослівним сучасним перекладом.",
-          en: "Interlinear Greek–Russian New Testament: the Stephanus 1550 Textus Receptus with a word-for-word modern translation.",
-        },
-        pages: 709,
-        sizeMb: 5.9,
-        coverH: 517,
-      },
-      {
-        slug: "bibleyskiy-slovar-vikhlyantsev",
-        label: { uk: "Библейский словарь", en: "Библейский словарь" },
-        title: { uk: "Библейский словарь", en: "Библейский словарь" },
-        byline: { uk: "В. П. Вихлянцев", en: "V. P. Vikhlyantsev" },
-        note: {
-          uk: "Словник до Біблії Синодального перекладу.",
-          en: "Bible Dictionary, keyed to the Russian Synodal Bible.",
-        },
-        pages: 331,
-        sizeMb: 3.9,
-        coverH: 518,
-      },
-      {
-        slug: "kak-izuchat-bibliyu-1",
-        label: { uk: "Как изучать Библию. Часть I", en: "Как изучать Библию. Часть I" },
-        title: { uk: "Как изучать Библию. Часть I", en: "Как изучать Библию. Часть I" },
-        byline: { uk: "BEE International · Тріада, Москва, 1996", en: "BEE International · Triada, Moscow, 1996" },
-        note: {
-          uk: "Навчальний посібник з індуктивного вивчення Біблії.",
-          en: "How to Study the Bible, Part I: a study guide to inductive Bible study.",
-        },
-        pages: 292,
-        sizeMb: 1.7,
-        coverH: 567,
-      },
-      {
-        slug: "dekhtyarenko-svyatoy-dukh",
-        label: { uk: "Святой Дух", en: "Святой Дух" },
-        title: { uk: "Святой Дух", en: "Святой Дух" },
-        byline: { uk: "Р. Б. Дехтяренко · Слов’янське Євангельське Товариство", en: "R. B. Dekhtyarenko · Slavic Gospel Association" },
-        note: {
-          uk: "Сутність, служіння, перебування і дія Святого Духа. Серія «В помощь служителю».",
-          en: "The Holy Spirit: His nature, ministry, indwelling and work. From the series “In Aid of the Minister.”",
-        },
-        pages: 337,
-        sizeMb: 1.3,
-        coverH: 561,
-      },
-      {
-        slug: "dekhtyarenko-uchenie-ob-angelakh",
-        label: { uk: "Библейское учение об ангелах", en: "Библейское учение об ангелах" },
-        title: { uk: "Библейское учение об ангелах", en: "Библейское учение об ангелах" },
-        byline: { uk: "Р. Б. Дехтяренко · Ірпінська біблійна семінарія, 1999", en: "R. B. Dekhtyarenko · Irpin Biblical Seminary, 1999" },
-        note: {
-          uk: "Що Біблія вчить про ангелів.",
-          en: "Biblical Teaching on Angels.",
-        },
-        pages: 134,
-        sizeMb: 1.0,
-        coverH: 580,
-      },
-      {
-        slug: "brock-voprosy",
-        label: { uk: "Вопросы, которые задают люди и церкви", en: "Вопросы, которые задают люди и церкви" },
-        title: { uk: "Вопросы, которые задают люди и церкви", en: "Вопросы, которые задают люди и церкви" },
-        byline: { uk: "Чарльз Брок", en: "Charles Brock" },
-        note: {
-          uk: "Російське видання 1999 року книги «Questions People and Churches Ask».",
-          en: "Questions People and Churches Ask, in its 1999 Russian edition.",
-        },
-        pages: 193,
-        sizeMb: 1.0,
-        coverH: 563,
-      },
-    ],
-  },
-  {
     id: "visnyk-pravdy",
     kind: "magazine",
-    groupByYear: true,
     title: VP,
     description: {
       uk: "Журнал Західного Українського Євангельсько-Баптистського об’єднання, США. Номери 2007–2010 років.",
       en: "Magazine of the Western Ukrainian Evangelical Baptist Association, USA. Issues from 2007 to 2010.",
     },
-    language: "uk",
     items: [
       issue(VP, "visnyk-pravdy-2007-1", 2007, 1, 91, null, 32, 2.5, 531),
       issue(VP, "visnyk-pravdy-2007-2", 2007, 2, 92, null, 32, 1.8, 531),
@@ -262,13 +165,11 @@ export const library: LibraryCollection[] = [
   {
     id: "svichnyk",
     kind: "magazine",
-    groupByYear: true,
     title: SV,
     description: {
       uk: "Духовно збудовуючий журнал Обласного об’єднання церков євангельських християн-баптистів Рівненської області. Номери 2008–2010 років.",
       en: "A devotional magazine of the regional association of Evangelical Christian-Baptist churches of Rivne Oblast, Ukraine. Issues from 2008 to 2010.",
     },
-    language: "uk",
     items: [
       issue(SV, "svichnyk-2008-3", 2008, 3, 41, null, 44, 14.5, 566),
       issue(SV, "svichnyk-2008-4", 2008, 4, 42, null, 44, 10.9, 566),
@@ -284,13 +185,11 @@ export const library: LibraryCollection[] = [
   {
     id: "za-yevanhelsku-viru",
     kind: "magazine",
-    groupByYear: true,
     title: ZV,
     description: {
       uk: "Часопис Всеукраїнського союзу церков християн віри євангельської (з 2011 року — Церкви ХВЄ України). Номери 2009–2011 років.",
       en: "Periodical of the All-Ukrainian Union of Churches of Christians of Evangelical Faith (from 2011, the Church of Christians of Evangelical Faith of Ukraine). Issues from 2009 to 2011.",
     },
-    language: "uk",
     items: [
       issue(ZV, "za-yevanhelsku-viru-2009-01", 2009, 1, 52, 1, 8, 1.6, 566),
       issue(ZV, "za-yevanhelsku-viru-2009-02", 2009, 2, 53, 2, 8, 1.1, 566),
@@ -318,37 +217,6 @@ export const library: LibraryCollection[] = [
       issue(ZV, "za-yevanhelsku-viru-2011-03", 2011, 3, 78, 3, 8, 0.9, 566),
     ],
   },
-  {
-    // Issue 1 (Nov 2006) came out as «Вселенная как мысль»; the masthead
-    // changed to «Разумный замысел» from issue 2. Issues 2–8 print no date.
-    id: "razumnyy-zamysel",
-    kind: "magazine",
-    title: RZ,
-    description: {
-      uk: "Газета про сотворіння світу, науку і Біблію, що виходила в Україні. Перший номер (листопад 2006) вийшов під назвою «Вселенная как мысль». Номери 1–17.",
-      en: "A newspaper on creation, science and the Bible, published in Ukraine. The first issue (November 2006) appeared under the title Vselennaya kak mysl. Issues 1–17.",
-    },
-    language: "ru",
-    items: [
-      issue(RZ, "razumnyy-zamysel-01", 2006, 1, null, 11, 8, 2.2, 580),
-      issue(RZ, "razumnyy-zamysel-02", null, 2, null, null, 8, 5.1, 566),
-      issue(RZ, "razumnyy-zamysel-03", null, 3, null, null, 8, 1.8, 580),
-      issue(RZ, "razumnyy-zamysel-04", null, 4, null, null, 8, 0.7, 580),
-      issue(RZ, "razumnyy-zamysel-05", null, 5, null, null, 8, 1.8, 580),
-      issue(RZ, "razumnyy-zamysel-06", null, 6, null, null, 8, 1.5, 580),
-      issue(RZ, "razumnyy-zamysel-07", null, 7, null, null, 8, 1.3, 580),
-      issue(RZ, "razumnyy-zamysel-08", null, 8, null, null, 12, 1.8, 580),
-      issue(RZ, "razumnyy-zamysel-09", 2008, 9, null, 5, 14, 1.0, 580),
-      issue(RZ, "razumnyy-zamysel-10", 2008, 10, null, 7, 14, 1.4, 580),
-      issue(RZ, "razumnyy-zamysel-11", 2008, 11, null, 10, 14, 1.5, 580),
-      issue(RZ, "razumnyy-zamysel-12", 2008, 12, null, 12, 14, 1.2, 580),
-      issue(RZ, "razumnyy-zamysel-13", 2009, 13, null, 2, 14, 1.1, 580),
-      issue(RZ, "razumnyy-zamysel-14", 2009, 14, null, 4, 14, 1.3, 580),
-      issue(RZ, "razumnyy-zamysel-15", 2009, 15, null, 6, 18, 2.2, 580),
-      issue(RZ, "razumnyy-zamysel-16", 2009, 16, null, 8, 18, 1.7, 580),
-      issue(RZ, "razumnyy-zamysel-17", 2009, 17, null, 10, 18, 2.0, 580),
-    ],
-  },
 ];
 
 export function getLibraryItem(slug: string) {
@@ -368,7 +236,6 @@ export function getLibraryItem(slug: string) {
 
 const COUNT_WORDS = {
   magazine: { uk: { one: "номер", few: "номери", many: "номерів" }, en: { one: "issue", other: "issues" } },
-  books: { uk: { one: "книга", few: "книги", many: "книг" }, en: { one: "book", other: "books" } },
   church: { uk: { one: "документ", few: "документи", many: "документів" }, en: { one: "document", other: "documents" } },
 } as const;
 
@@ -387,13 +254,10 @@ export function formatSize(mb: number, locale: Locale) {
 export const libraryUi = {
   eyebrow: { uk: "БІБЛІОТЕКА", en: "LIBRARY" },
   lead: {
-    uk: "Журнали, книги і документи нашої церкви. Читайте прямо на сайті або завантажуйте собі.",
-    en: "Magazines, books and our church's own documents. Read them right here on the site, or download a copy.",
+    uk: "Християнські журнали і документи нашої церкви. Читайте прямо на сайті або завантажуйте собі.",
+    en: "Christian magazines and our church's own documents. Read them right here on the site, or download a copy.",
   },
-  language: {
-    uk: { uk: "Українською", en: "In Ukrainian" },
-    ru: { uk: "Російською", en: "In Russian" },
-  },
+  language: { uk: "Українською", en: "In Ukrainian" },
   pages: { uk: "с.", en: "pp." },
   read: { uk: "Читати", en: "Read" },
   download: { uk: "Завантажити PDF", en: "Download PDF" },

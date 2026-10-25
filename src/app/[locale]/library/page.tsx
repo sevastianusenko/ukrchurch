@@ -79,45 +79,18 @@ export default async function LibraryPage({
           <div className="mx-auto max-w-6xl px-5 py-14 sm:py-16">
             <CollectionHeading collection={collection} locale={locale} />
 
-            {collection.kind === "books" ? (
-              <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
-                {collection.items.map((item) => (
-                  <LibraryCover
-                    key={item.slug}
-                    item={item}
-                    locale={locale}
-                    caption={item.label[locale]}
-                    showByline
-                    sizes="(min-width: 1024px) 170px, (min-width: 640px) 30vw, 45vw"
-                  />
-                ))}
-              </div>
-            ) : collection.groupByYear ? (
-              <div className="mt-10 space-y-10">
-                {byYear(collection.items).map((group) => (
-                  <div key={group.year} className="grid gap-4 md:grid-cols-[5rem_1fr] md:gap-8">
-                    <h3 className="font-display text-xl font-semibold text-ink/40 md:pt-1">{group.year}</h3>
-                    <div className={ISSUE_GRID}>
-                      {group.items.map((item) => (
-                        <LibraryCover key={item.slug} item={item} locale={locale} caption={item.label[locale]} sizes={ISSUE_SIZES} />
-                      ))}
-                    </div>
+            <div className="mt-10 space-y-10">
+              {byYear(collection.items).map((group) => (
+                <div key={group.year} className="grid gap-4 md:grid-cols-[5rem_1fr] md:gap-8">
+                  <h3 className="font-display text-xl font-semibold text-ink/40 md:pt-1">{group.year}</h3>
+                  <div className={ISSUE_GRID}>
+                    {group.items.map((item) => (
+                      <LibraryCover key={item.slug} item={item} locale={locale} caption={item.label[locale]} sizes={ISSUE_SIZES} />
+                    ))}
                   </div>
-                ))}
-              </div>
-            ) : (
-              <div className={`mt-10 ${ISSUE_GRID}`}>
-                {collection.items.map((item) => (
-                  <LibraryCover
-                    key={item.slug}
-                    item={item}
-                    locale={locale}
-                    caption={item.year ? `${item.label[locale]} ${item.year}` : item.label[locale]}
-                    sizes={ISSUE_SIZES}
-                  />
-                ))}
-              </div>
-            )}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       ))}
@@ -133,7 +106,7 @@ function CollectionHeading({ collection, locale }: { collection: LibraryCollecti
       <p className="mt-3 flex flex-wrap gap-x-3 text-xs font-bold tracking-[0.1em] text-poppy">
         <span>{countLabel(collection.items.length, collection.kind, locale).toUpperCase()}</span>
         <span className="text-charcoal/30">·</span>
-        <span className="text-charcoal/55">{libraryUi.language[collection.language][locale].toUpperCase()}</span>
+        <span className="text-charcoal/55">{libraryUi.language[locale].toUpperCase()}</span>
       </p>
     </div>
   );

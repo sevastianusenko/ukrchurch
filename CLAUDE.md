@@ -51,8 +51,9 @@ maps to.
    - Denominational affiliation: member church of the Ukrainian Baptist
      Convention in the USA (UMBS / ukrbaptist.org)
    Do not alter these without the client confirming a change.
-   - Pastors (first names only, from a real 2026-01 post): Віктор, Леонід,
-     Кирило. No surnames, titles, or photos yet.
+   - Pastors: Віктор Щипайло, Леонід Близнюк, Кирило Столяров (surnames
+     from the church's written history, its 2026-08-30 bulletin, and the
+     client, 2026-10-24). No titles or individual photos yet.
    - Founded c. 2005 — the church's own 2025 posts describe a 20th
      anniversary service held 2025-09-21. An earlier, unverified "1999"
      founding story (family Bliznuk, Pastor Ivan Kovalchuk) was found only
@@ -69,7 +70,7 @@ maps to.
    OPEN-QUESTIONS.md for the still-missing real calendar link), Give
    (Пожертви — real Zelle info + QR in `content.giving` and
    `public/photos/give/zelle-qr.png`), Library (Бібліотека — client-supplied
-   PDFs of magazines, books and church documents with an on-site PDF.js
+   PDFs of Ukrainian magazines and church documents with an on-site PDF.js
    reader at `/library/<slug>`, see rule 7), Visit/Contact (Завітайте до нас).
    The header logo (`public/logo.png`, `src/app/icon.png`) is a real
    asset found in the client's files, not designed — see
@@ -89,8 +90,8 @@ maps to.
    `public/library/<slug>.pdf` with its page-1 cover rendered 400px wide
    at `public/library/covers/<slug>.jpg` (store the cover's height as
    `coverH`). Titles, issue numbers and dates come only from the PDF's own
-   cover/masthead/imprint — leave a field out rather than infer it. Book
-   titles stay in their original language in both locales. The reader
+   cover/masthead/imprint — leave a field out rather than infer it. No
+   books and nothing in Russian (client, 2026-10-24). The reader
    loads PDF.js assets from `public/pdfjs/`, which `npm run dev`/`build`
    copy from `node_modules` (`scripts/copy-pdfjs-assets.mjs`, gitignored).
 

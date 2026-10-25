@@ -227,11 +227,12 @@ export const mission = {
 // — comes from the church's own printed Sunday bulletin (2026-08-30
 // edition), where he is titled "п." (pastor) preaching that day. Viktor's
 // — Щипайло — from the church's written history (2025, see
-// `aboutPage.history`); the English spelling "Shchypailo" is a standard
-// transliteration, not one he has confirmed. Kyrylo's surname, titles,
-// and photos are still not public. See OPEN-QUESTIONS.md.
-export const pastors: string[] = ["Віктор Щипайло", "Леонід Близнюк", "Кирило"];
-export const pastorsEn: string[] = ["Viktor Shchypailo", "Leonid Bliznyuk", "Kyrylo"];
+// `aboutPage.history`); Kyrylo's — Столяров — from the client
+// (2026-10-24). The English spellings "Shchypailo" and "Stoliarov" are
+// standard transliterations, not ones the pastors have confirmed. Titles
+// and individual photos are still not public. See OPEN-QUESTIONS.md.
+export const pastors: string[] = ["Віктор Щипайло", "Леонід Близнюк", "Кирило Столяров"];
+export const pastorsEn: string[] = ["Viktor Shchypailo", "Leonid Bliznyuk", "Kyrylo Stoliarov"];
 
 // 2005 is when the present Ukrainian church was formed and officially
 // opened (13 Nov 2005), per the church's written history; its 20th

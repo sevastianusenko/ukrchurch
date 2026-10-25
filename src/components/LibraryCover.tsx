@@ -9,13 +9,11 @@ export default function LibraryCover({
   locale,
   caption,
   sizes,
-  showByline = false,
 }: {
   item: LibraryItem;
   locale: Locale;
   caption: string;
   sizes: string;
-  showByline?: boolean;
 }) {
   return (
     <Link href={`/${locale}/library/${item.slug}`} className="group flex flex-col gap-3">
@@ -29,10 +27,7 @@ export default function LibraryCover({
           className="h-auto w-full"
         />
       </div>
-      <div>
-        <p className="text-sm font-semibold leading-snug text-ink group-hover:text-poppy">{caption}</p>
-        {showByline && item.byline && <p className="mt-1 text-xs leading-snug text-charcoal/60">{item.byline[locale]}</p>}
-      </div>
+      <p className="text-sm font-semibold leading-snug text-ink group-hover:text-poppy">{caption}</p>
     </Link>
   );
 }

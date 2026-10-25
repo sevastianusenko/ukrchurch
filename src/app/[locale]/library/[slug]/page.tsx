@@ -85,7 +85,7 @@ export default async function LibraryItemPage({
             {item.byline && <p className="mt-2 text-wheat/70">{item.byline[locale]}</p>}
             {item.note && <p className="mt-3 max-w-2xl text-sm leading-relaxed text-wheat/75">{item.note[locale]}</p>}
             <p className="mt-3 text-xs text-wheat/50">
-              {libraryUi.language[collection.language][locale]} · {item.pages} {libraryUi.pages[locale]} · PDF,{" "}
+              {libraryUi.language[locale]} · {item.pages} {libraryUi.pages[locale]} · PDF,{" "}
               {formatSize(item.sizeMb, locale)}
             </p>
           </div>

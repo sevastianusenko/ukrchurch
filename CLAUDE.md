@@ -68,7 +68,9 @@ maps to.
    instead of inventing future dates — see `content.googleCalendar` and
    OPEN-QUESTIONS.md for the still-missing real calendar link), Give
    (Пожертви — real Zelle info + QR in `content.giving` and
-   `public/photos/give/zelle-qr.png`), Visit/Contact (Завітайте до нас).
+   `public/photos/give/zelle-qr.png`), Library (Бібліотека — client-supplied
+   PDFs of magazines, books and church documents with an on-site PDF.js
+   reader at `/library/<slug>`, see rule 7), Visit/Contact (Завітайте до нас).
    The header logo (`public/logo.png`, `src/app/icon.png`) is a real
    asset found in the client's files, not designed — see
    PHOTOS-NEEDED.md re: its authenticity is still unconfirmed.
@@ -83,6 +85,14 @@ maps to.
    `{slug, date, category, title, excerpt, body[], hero, gallery?}` with
    every field as a `{uk, en}` pair, and add any new photos under
    `public/photos/news/<slug>/`.
+7. **Library content lives in `content/library.ts`.** Each item is a PDF at
+   `public/library/<slug>.pdf` with its page-1 cover rendered 400px wide
+   at `public/library/covers/<slug>.jpg` (store the cover's height as
+   `coverH`). Titles, issue numbers and dates come only from the PDF's own
+   cover/masthead/imprint — leave a field out rather than infer it. Book
+   titles stay in their original language in both locales. The reader
+   loads PDF.js assets from `public/pdfjs/`, which `npm run dev`/`build`
+   copy from `node_modules` (`scripts/copy-pdfjs-assets.mjs`, gitignored).
 
 ---
 

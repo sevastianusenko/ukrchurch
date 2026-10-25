@@ -16,6 +16,7 @@ export default function Header({ locale }: { locale: Locale }) {
     { href: `${base}/ministries`, label: ui.nav.ministries[locale] },
     { href: `${base}/news`, label: ui.nav.news[locale] },
     { href: `${base}/calendar`, label: ui.nav.calendar[locale] },
+    { href: `${base}/library`, label: ui.nav.library[locale] },
     { href: `${base}/visit`, label: ui.nav.visit[locale] },
   ];
 

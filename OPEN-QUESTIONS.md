@@ -1,8 +1,7 @@
 # Open questions — needs client confirmation before launch
 
-Last updated: 2026-09-13 (16 real posts now migrated/added total — see
-`content/posts.ts` — plus a real printed church bulletin the client
-photographed, which resolved several items below)
+Last updated: 2026-10-24 (Library added, see #21; the church's own
+written history now in hand, see #3)
 
 ## Facts pulled from the two existing sites that need a human to confirm
 
@@ -43,6 +42,33 @@ photographed, which resolved several items below)
    dead `1ukrchurch.org`, and one migrated post's image is a photo of a
    printed "ІСТОРІЯ м. ЛАНКАСТЕР 2025" document
    (`content/posts.ts` → `harvest-festival-invite-2025`).
+   **Update 2026-10-24: that history document itself is now in hand** (the
+   client's PDF, author metadata "Leonid Bliznyuk", now on `/library` as
+   `public/library/church-history-2025.pdf`). It reconciles both stories:
+   a Ukrainian Baptist Church was opened in Lancaster on **8 Aug 1999**
+   (Bliznyuk family, initiated by Pastor Ivan Kovalchuk, meeting in New
+   Holland; renamed Slavic Baptist Church in 2002); on **14 Aug 2005** a
+   members' meeting voted to form the Ukrainian church; first service
+   **11 Sep 2005** (~60 people, East Petersburg); official opening
+   **13 Nov 2005** at Lancaster Moravian Church. It also names the pastors
+   as **Леонід Близнюк and Віктор Щипайло** (no Kyrylo), says the church
+   has 60 members, and states a mission sentence.
+   **Resolved 2026-10-24 (client asked):** the About page's "Наша
+   історія" section is now a 10-step timeline built from this document
+   (`content/church.ts` → `aboutPage.history`, rendered at
+   `/about#history`, with a link to the full PDF). Viktor's surname is now
+   on the site as Щипайло / "Shchypailo" (that English spelling is a
+   standard transliteration — confirm how he spells it). Still worth a
+   quick read-through by Pastor Leonid: the pastoral handover to Viktor
+   is written in the present tense ("are handing on") because the
+   document gives no date; the 2022 entry dates the arrival of refugees
+   by the start of the full-scale invasion (the document says "з
+   початком повномасштабного вторгнення", no year); the deacons' names
+   are spelled "Sevastian Usenko" and "David Mararenko" in English; the
+   first ten families and the names of people baptized are left in the
+   PDF rather than repeated on the page; and the document's own mission
+   sentence («Приводити людей до Ісуса Христа…») differs from the
+   mission statement already on the site, which was left as is.
 4. **Contact email/phone — reuse or replace?** Both existing sites list
    phone `267-686-1420` and email `contact@ukrlancaster.church`. This site
    reuses both as-is. Confirm these still work, especially the email if the
@@ -198,12 +224,54 @@ photographed, which resolved several items below)
     inventing names, unlike the baptism-2025 post which named Vitaliy and
     Danyil from the original migrated content.
 
+20. **About page rebuilt 2026-10-11 with 10 new photos, captions need a
+    quick check.** The client sent a new batch (Lord's Supper, a Christmas
+    group photo, the "Джерельце" banner with children, prayer with laying
+    on of hands, baptism day, a home group, a home visit, a service in a
+    wooden hall). Captions only describe what is visible, with no names,
+    dates or places. Please confirm: what "Джерельце" is (the church's
+    written history, see #3, calls it the summer Christian day camp — so
+    likely answered), where the wooden hall is (camp?), and whether the
+    laying-on-of-hands photo at the pulpit is an ordination. Also per the
+    client, the site now says "церква" instead of "громада" in its own copy
+    (the Statement of Faith and migrated posts keep their original wording).
+
+21. **Library (`/library`) added 2026-10-24 — publishing rights need a
+    yes.** The client dropped 84 files in `Downloads` "to go on the site."
+    78 are now on `/library` with an on-site PDF.js reader
+    (`content/library.ts`, files in `public/library/`). Please confirm:
+    - **Copyright.** The six books (BEE International, Vikhlyantsev,
+      Dekhtyarenko ×2, Charles Brock, Zhuromsky's interlinear NT) and the
+      four magazines («Вісник Правди», «Свічник», «За євангельську віру»,
+      «Разумный замысел») are third-party publications, several marked
+      "All rights reserved". They're widely shared in churches, but the
+      church should be sure it may host them publicly. Easy to pull any
+      single item: delete its entry in `content/library.ts` and its PDF.
+    - **Статут.** The supplied PDF is a print-ready booklet (pages paired
+      28|1, 2|27…); the on-site copy was re-ordered 1–28 for reading, text
+      untouched. Its adoption date is printed blank ("«__» «___» 2007
+      року"). Confirm it's the current statute and meant to be public.
+    - **Not added:** `Вайнгрин Д. Введение в текстологию Ветхого
+      Завета.pdf` is a 321-byte iPhone Mail placeholder, not the real
+      ~9 MB file (re-download it from the email). `Програмка_25 ЖОВТНЯ_
+      2026.pub` is a Publisher file, not a book (export to PDF if it should
+      go up). Byte-identical duplicates were skipped (`2011_0*_za_viru_1`,
+      `Святий Дух_ Дехтеренко`).
+    - **Labels** come only from each PDF's own cover/masthead/imprint.
+      «Разумный замысел» file `0.pdf` is issue №1 (Nov 2006, printed as
+      «Вселенная как мысль»); issues 2–8 print no date, so none is shown.
+      Issue №13's imprint misprints itself as "№ 12"; its masthead says
+      №1 (13), so it's listed as №13. «Свічник» 1/2010 has no cover page
+      in the supplied file.
+    - **Size.** ~250 MB of PDFs now live in the repo; the largest single
+      file is 19 MB. If Vercel or GitHub ever push back on size, move
+      `public/library/*.pdf` to Vercel Blob and point `pdfPath()` at it.
+
 ## Content decisions made without asking (flagging, not blocking)
 
-- Kept the **c. 2005** founding year on the site itself (About page) since
-  it's the only one confirmed by the church's own recent posts, but
-  logged the Bliznyuk-family coincidence for a human to actually reconcile
-  (see #3) rather than merging the two stories myself.
+- ~~Kept the **c. 2005** founding year on the site itself~~ Superseded
+  2026-10-24: the church's own written history reconciles 1999 and 2005,
+  and the About page timeline now follows it (see #3).
 - English mission-statement copy was lightly smoothed for grammar from the
   church's own published English text (translation artifacts fixed,
   meaning unchanged) — see `/content/church.ts` for both versions.

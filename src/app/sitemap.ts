@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales } from "../../content/church";
 import { posts } from "../../content/posts";
+import { library } from "../../content/library";
 
 // Confirmed 2026-09-14: the client connected ukrlancaster.church (the
 // domain of the church's old WordPress site) to this Vercel project —
@@ -14,6 +15,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/ministries", priority: 0.7, changeFrequency: "monthly" },
   { path: "/news", priority: 0.7, changeFrequency: "weekly" },
   { path: "/calendar", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/library", priority: 0.6, changeFrequency: "monthly" },
   { path: "/give", priority: 0.6, changeFrequency: "monthly" },
   { path: "/visit", priority: 0.8, changeFrequency: "monthly" },
 ];
@@ -39,6 +41,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "monthly",
         priority: 0.5,
       });
+    }
+  }
+
+  for (const collection of library) {
+    for (const item of collection.items) {
+      for (const locale of locales) {
+        entries.push({
+          url: `${SITE_URL}/${locale}/library/${item.slug}`,
+          changeFrequency: "yearly",
+          priority: 0.4,
+        });
+      }
     }
   }
 

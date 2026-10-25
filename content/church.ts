@@ -55,7 +55,7 @@ export const giving = {
 export const buildingFund = {
   heading: { uk: "Наш власний дім молитви", en: "A House of Prayer of Our Own" } satisfies Bi,
   body: {
-    uk: "Сьогодні ми орендуємо приміщення для богослужінь. Ми віримо, що Бог веде нашу громаду до власного дому молитви, і збираємо кошти на цю мету. Долучіться до цієї важливої справи своєю пожертвою.",
+    uk: "Сьогодні ми орендуємо приміщення для богослужінь. Ми віримо, що Бог веде нашу церкву до власного дому молитви, і збираємо кошти на цю мету. Долучіться до цієї важливої справи своєю пожертвою.",
     en: "Right now, we rent the space where we worship. We believe God is leading our congregation toward a building of our own, and we're raising funds toward that goal. Join us in this important work with your gift.",
   } satisfies Bi,
 };
@@ -65,7 +65,7 @@ export const buildingFund = {
 export const prayForUkraine = {
   heading: { uk: "Моліться за Україну", en: "Pray for Ukraine" } satisfies Bi,
   body: {
-    uk: "Війна триває, і наша громада продовжує молитися за мир, за наш народ і за перемогу України. Приєднуйтесь до нас у молитві.",
+    uk: "Війна триває, і наша церква продовжує молитися за мир, за наш народ і за перемогу України. Приєднуйтесь до нас у молитві.",
     en: "The war continues, and our congregation keeps praying for peace, for our people, and for Ukraine's victory. Join us in prayer.",
   } satisfies Bi,
   linkUrl: "https://prayforukraine.org.ua/ua",
@@ -188,7 +188,7 @@ export const annualEvents: AnnualEvent[] = [
     season: { uk: "ГРУДЕНЬ", en: "DECEMBER" },
     title: { uk: "Різдвяна коляда", en: "Christmas Caroling" },
     description: {
-      uk: "Група колядників відвідує родини громади, друзів та сусідів зі співом і Різдвяною звісткою.",
+      uk: "Група колядників відвідує родини церкви, друзів та сусідів зі співом і Різдвяною звісткою.",
       en: "A caroling group visits families in the congregation, friends, and neighbors with song and the Christmas message.",
     },
     postSlug: "christmas-caroling-2025",
@@ -225,19 +225,19 @@ export const mission = {
 // First names from a real 2026 New Year's post (Viktor, Leonid, Kyrylo
 // addressed the church that night). Leonid's surname — Близнюк / Bliznyuk
 // — comes from the church's own printed Sunday bulletin (2026-08-30
-// edition), where he is titled "п." (pastor) preaching that day. The
-// other two surnames, titles, and photos are still not public. See
-// OPEN-QUESTIONS.md.
-export const pastors: string[] = ["Віктор", "Леонід Близнюк", "Кирило"];
-export const pastorsEn: string[] = ["Viktor", "Leonid Bliznyuk", "Kyrylo"];
+// edition), where he is titled "п." (pastor) preaching that day. Viktor's
+// — Щипайло — from the church's written history (2025, see
+// `aboutPage.history`); the English spelling "Shchypailo" is a standard
+// transliteration, not one he has confirmed. Kyrylo's surname, titles,
+// and photos are still not public. See OPEN-QUESTIONS.md.
+export const pastors: string[] = ["Віктор Щипайло", "Леонід Близнюк", "Кирило"];
+export const pastorsEn: string[] = ["Viktor Shchypailo", "Leonid Bliznyuk", "Kyrylo"];
 
-// Founding year derived from the church's own 2025 posts: a "20th
-// anniversary" service was held 2025-09-21, so the church was founded
-// c. 2005. An earlier, separately-found 1999 story (family Bliznuk
-// arriving and proposing the church) is NOT necessarily wrong — a real
-// pastor here today is "Leonid Bliznyuk" (see `pastors` above) — but the
-// two stories haven't been reconciled into one timeline. See
-// OPEN-QUESTIONS.md.
+// 2005 is when the present Ukrainian church was formed and officially
+// opened (13 Nov 2005), per the church's written history; its 20th
+// anniversary was celebrated 2025-09-21. Its roots go back to a first
+// Ukrainian Baptist church opened in Lancaster on 8 Aug 1999. The full
+// timeline is `aboutPage.history` below.
 export const foundingYear = 2005;
 export const anniversaryEvent = {
   uk: "21 вересня 2025 року церква відсвяткувала 20-ту річницю заснування разом зі Святом Жнив.",
@@ -306,7 +306,7 @@ export const ministries: Ministry[] = [
     },
     photo: "/photos/worship.jpg",
     alt: {
-      uk: "Наша громада зібралась разом на недільному богослужінні",
+      uk: "Наша церква зібралась разом на недільному богослужінні",
       en: "Our congregation gathered together for Sunday worship",
     },
   },
@@ -643,6 +643,7 @@ export const ui = {
     ministries: { uk: "Служіння", en: "Ministries" },
     news: { uk: "Новини", en: "News" },
     calendar: { uk: "Календар", en: "Calendar" },
+    library: { uk: "Бібліотека", en: "Library" },
     give: { uk: "Пожертви", en: "Give" },
     visit: { uk: "Завітайте", en: "Visit" },
   },
@@ -652,3 +653,176 @@ export const ui = {
   readMore: { uk: "Читати", en: "Read" },
   sundayEyebrow: { uk: "НЕДІЛЯ · 14:00", en: "SUNDAY · 2:00 PM" },
 } as const;
+
+// About page (rebuilt 2026-10-11). The idea follows the church's original
+// "Хто ми / Наша місія / Історія" page on ukrchurchlancaster.com, rewritten.
+// Photos in public/photos/about/ are the church's own, sent 2026-10-11.
+// Captions describe only what is visible; no names or dates are guessed.
+export const aboutPage = {
+  heroTitle: { uk: "Про нашу церкву", en: "About our church" } satisfies Bi,
+  heroLead: {
+    uk: "Українська євангельсько-баптистська церква в Ланкастері. Щонеділі збираємось на богослужіння українською та англійською, і будемо раді бачити й вас.",
+    en: "A Ukrainian Evangelical Baptist church in Lancaster. We gather every Sunday for worship in Ukrainian and English, and you are welcome to join us.",
+  } satisfies Bi,
+  whoTitle: { uk: "Хто ми", en: "Who we are" } satisfies Bi,
+  who: [
+    {
+      uk: "Ми звичайні люди, які зрозуміли просту і важливу річ: самі себе ми не врятуємо, нам потрібен Спаситель. Ним для нас став Ісус Христос. Він помер за гріх цього світу і дарує нове життя кожному, хто приходить до Нього з вірою.",
+      en: "We are ordinary people who came to understand one simple, important thing: we cannot save ourselves, we need a Savior. For us, that Savior is Jesus Christ. He died for the sin of this world and gives new life to everyone who comes to Him in faith.",
+    },
+    {
+      uk: "Біблія для нас є Словом Божим і головним авторитетом у житті. Тому в центрі кожного зібрання стоять молитва, спів і проповідь Слова, а церква для нас є родиною, де ми разом вчимося жити так, як вчить Христос.",
+      en: "We believe the Bible is the Word of God and the authority for our lives. That is why prayer, singing and the preaching of the Word are at the heart of every gathering, and why the church is a family to us: a place where we learn together to live the way Christ teaches.",
+    },
+  ] satisfies Bi[],
+  missionTitle: { uk: "Наша місія", en: "Our mission" } satisfies Bi,
+  missionPillars: [
+    {
+      title: { uk: "Зростати", en: "Grow" },
+      body: {
+        uk: "Зростати в благодаті та пізнанні Господа і Спасителя нашого Ісуса Христа.",
+        en: "To grow in the grace and knowledge of our Lord and Savior Jesus Christ.",
+      },
+      ref: { uk: "2 Петра 3:18", en: "2 Peter 3:18" },
+    },
+    {
+      title: { uk: "Служити й любити", en: "Serve and love" },
+      body: {
+        uk: "Служити так, як служив Христос, і любити так, як Він полюбив нас.",
+        en: "To serve as Christ served, and to love as He loved us.",
+      },
+      ref: { uk: "Івана 13:34", en: "John 13:34" },
+    },
+    {
+      title: { uk: "Бути сіллю і світлом", en: "Be salt and light" },
+      body: {
+        uk: "Бути сіллю і світлом у світі, якому так бракує смаку і світла.",
+        en: "To be salt and light in a world so short of both.",
+      },
+      ref: { uk: "Матвія 5:13-14", en: "Matthew 5:13-14" },
+    },
+  ] satisfies { title: Bi; body: Bi; ref: Bi }[],
+  lifeTitle: { uk: "Життя церкви", en: "Church life" } satisfies Bi,
+  lifeLead: {
+    uk: "Богослужіння, Вечеря Господня, хрещення, молитва, діти і зустрічі вдома. Усі фото тут наші.",
+    en: "Worship, the Lord's Supper, baptism, prayer, children and gatherings at home. Every photo here is our own.",
+  } satisfies Bi,
+  photos: [
+    { src: "/photos/about/lords-supper.jpg", w: 1280, h: 960, alt: { uk: "Служителі біля столу Вечері Господньої", en: "Ministers at the Lord's Supper table" } },
+    { src: "/photos/about/baptism-prayer.jpg", w: 960, h: 1280, alt: { uk: "Молитва з покладанням рук у день хрещення", en: "Prayer with laying on of hands on baptism day" } },
+    { src: "/photos/about/dzherelce.jpg", w: 1280, h: 960, alt: { uk: "Діти та дорослі з написом «Джерельце»", en: "Children and adults with the Dzherelce banner" } },
+    { src: "/photos/about/prayer-blessing.jpg", w: 1280, h: 960, alt: { uk: "Служителі моляться за братів і сестер біля кафедри", en: "Ministers praying over brothers and sisters at the pulpit" } },
+    { src: "/photos/about/after-baptism.jpg", w: 960, h: 1280, alt: { uk: "Пастор вітає сестру з квітами після хрещення", en: "A pastor greets a sister with flowers after her baptism" } },
+    { src: "/photos/about/home-group.jpg", w: 1280, h: 960, alt: { uk: "Зустріч удома", en: "A gathering at home" } },
+    { src: "/photos/about/flowers-hall.jpg", w: 960, h: 1280, alt: { uk: "Привітання з квітами під час служіння", en: "Greeting with flowers during a service" } },
+    { src: "/photos/about/home-visit.jpg", w: 1280, h: 640, alt: { uk: "Відвідини брата вдома", en: "Visiting a brother at home" } },
+    { src: "/photos/about/hall-service.jpg", w: 960, h: 1280, alt: { uk: "Служіння в залі", en: "A service in the hall" } },
+  ],
+  // Timeline from the church's own written history ("Історія церкви",
+  // Lancaster 2025, by Pastor Leonid Bliznyuk; on the site at
+  // /library/church-history-2025). Only events and dates that document
+  // states are used; the 20th-anniversary date comes from the real 2025
+  // News post, and the building fund from the client (2026-09-13).
+  historyTitle: { uk: "Наша історія", en: "Our story" } satisfies Bi,
+  historyEyebrow: { uk: "ІСТОРІЯ ЦЕРКВИ", en: "CHURCH HISTORY" } satisfies Bi,
+  historyLead: {
+    uk: "Історія нашої церкви почалася 8 серпня 1999 року. А 13 листопада 2005 року в Ланкастері відбулося офіційне відкриття Української Церкви Євангельських Християн Баптистів.",
+    en: "Our church's story began on August 8, 1999. On November 13, 2005, the Ukrainian Evangelical Christian Baptist Church of Lancaster was officially opened.",
+  } satisfies Bi,
+  historyReadFull: { uk: "Читати повну історію церкви", en: "Read the full church history" } satisfies Bi,
+  history: [
+    {
+      year: { uk: "1999", en: "1999" },
+      title: { uk: "Перша українська церква в Ланкастері", en: "The first Ukrainian church in Lancaster" },
+      body: {
+        uk: "Коли до Америки приїхала родина Леоніда та Галини Близнюк, пастор Іван Ковальчук, тодішній голова Об’єднання українських баптистських церков США, запропонував заснувати в Ланкастері українську баптистську церкву. Це була його мрія, виплекана в молитвах. Конвенція південних баптистів допомогла знайти й оплатити приміщення в американській баптистській церкві в Нью-Голланді. Офіційне відкриття відбулося 8 серпня 1999 року за участі чоловічого хору Першої української церкви Філадельфії. Першими до цієї праці долучилися десять родин.",
+        en: "When Leonid and Halyna Bliznyuk's family arrived in America, Pastor Ivan Kovalchuk, then head of the Ukrainian Baptist Convention in the USA, proposed starting a Ukrainian Baptist church in Lancaster. It was a dream he had carried in prayer for a long time. The Southern Baptist Convention helped find and pay for space in an American Baptist church in New Holland. The church officially opened on August 8, 1999, with the men's choir of the First Ukrainian Church of Philadelphia taking part. Ten families were the first to join the work.",
+      },
+    },
+    {
+      year: { uk: "2002–2003", en: "2002–2003" },
+      title: { uk: "Нова назва і нові люди", en: "A new name and new people" },
+      body: {
+        uk: "У 2002 році церкву перейменували на Слов’янську баптистську церкву. Того ж року в East Petersburg почалися вивчення Біблії та українська школа для дітей. У 2003 році разом із Першою українською церквою Філадельфії відзначили 100-річчя перекладу Біблії українською мовою та вшанували пам’ять жертв Голодомору в його 70-ті роковини. На ці заходи поштою запросили жителів слов’янського походження, і дехто з них почав шукати Бога та спілкування з українцями. Саме це стало підґрунтям для створення Української церкви в Ланкастері.",
+        en: "In 2002 the church was renamed the Slavic Baptist Church. That same year a Bible study and a Ukrainian school for children began in East Petersburg. In 2003, together with the First Ukrainian Church of Philadelphia, the church marked the 100th anniversary of the Bible's translation into Ukrainian and remembered the victims of the Holodomor on its 70th anniversary. Local residents of Slavic background were invited by postcard, and some of them began seeking God and fellowship with other Ukrainians. This laid the groundwork for a Ukrainian church in Lancaster.",
+      },
+    },
+    {
+      year: { uk: "2005", en: "2005" },
+      title: { uk: "Народження Української церкви", en: "The Ukrainian church is born" },
+      body: {
+        uk: "14 серпня членське зібрання Слов’янської баптистської церкви в Стівенсі за участі пастора Івана Ковальчука та секретаря Об’єднання пастора Анатолія Мошковського розглянуло створення Української церкви в Ланкастері. Близько 80% присутніх проголосували «за», і на це служіння благословили пастора Леоніда Близнюка. 11 вересня в церкві братів-менонітів в East Petersburg відбулося перше богослужіння: прийшло близько 60 людей разом із дітьми, звершили Вечерю Господню. 13 листопада в приміщенні Lancaster Moravian Church церкву офіційно відкрили, а 27 листопада вона відсвяткувала своє перше Свято Жнив.",
+        en: "On August 14, a members' meeting of the Slavic Baptist Church in Stevens, joined by Pastor Ivan Kovalchuk and the Convention's secretary, Pastor Anatoliy Moshkovsky, took up the question of forming a Ukrainian church in Lancaster. About 80% of those present voted in favor, and Pastor Leonid Bliznyuk was blessed for this ministry. The first service was held on September 11 at a Mennonite Brethren church in East Petersburg: about 60 people came, children included, and shared the Lord's Supper. On November 13 the church was officially opened at Lancaster Moravian Church, and on November 27 it celebrated its first Harvest Festival.",
+      },
+    },
+    {
+      year: { uk: "2006–2008", en: "2006–2008" },
+      title: { uk: "Церква приймає гостей", en: "A church that hosts" },
+      body: {
+        uk: "У 2006 році церква приймала 6-ту конференцію сестер, а у 2008 році приймала 63-й з’їзд нашого Українського Братерства, який пройшов в атмосфері радості та миру. Разом із церквами Об’єднання регулярно проводилися євангелізаційні зібрання.",
+        en: "In 2006 the church hosted the 6th sisters' conference, and in 2008 it hosted the 63rd convention of our Ukrainian Brotherhood, held in a spirit of joy and peace. Evangelistic meetings with the churches of our Convention were held regularly.",
+      },
+    },
+    {
+      year: { uk: "2009", en: "2009" },
+      title: { uk: "Служіння поруч і далеко", en: "Serving near and far" },
+      body: {
+        uk: "Церква взяла активну участь у відкритті церкви в Бережанах на Тернопільщині, служіння якої почалося в будинку-інтернаті. Ми підтримували його молитовно й фінансово, посилали сиротам одяг, харчі й теплу білизну. Сестри й молодь заробляли на це кошти: ліпили пельмені, готували частування і продавали їх на базарах, а молодь проводила кав’ярню в Ефраті. Того ж року разом із хорами церков Філадельфії, Гаррісбурга і Стівенса церква провела фестиваль слов’янської культури, де гості почули Євангелію Христа.",
+        en: "The church took an active part in opening a church in Berezhany, in Ukraine's Ternopil Oblast, whose ministry began in an orphanage. We supported it with prayer and money and sent the orphans clothes, food and warm underclothes. The sisters and young people raised the funds by making pelmeni and other food to sell at markets, and the youth ran a coffeehouse in Ephrata. That same year, with the choirs of churches from Philadelphia, Harrisburg and Stevens, the church held a festival of Slavic culture where guests also heard the Gospel of Christ.",
+      },
+    },
+    {
+      year: { uk: "2020", en: "2020" },
+      title: { uk: "15 років", en: "15 years" },
+      body: {
+        uk: "У листопаді церква відсвяткувала свій 15-річний ювілей. Озираючись назад, ми можемо з упевненістю сказати словами пророка Самуїла: «Аж доти допоміг нам Господь» (1 Самуїла 7:12).",
+        en: "In November the church celebrated its 15th anniversary. Looking back, we can say with confidence what the prophet Samuel said: “Thus far the Lord has helped us” (1 Samuel 7:12).",
+      },
+    },
+    {
+      year: { uk: "2022", en: "2022" },
+      title: { uk: "Нові брати і сестри", en: "New brothers and sisters" },
+      body: {
+        uk: "З початком повномасштабного вторгнення Росії в Україну багато віруючих братів і сестер прибули до США, і зокрема до нашої церкви. Усі вони активно долучилися до служінь церкви: проповіді, співу, навчання та інших.",
+        en: "When Russia's full-scale invasion of Ukraine began, many believers came to the United States, and a number of them to our church. They have all thrown themselves into its ministries: preaching, singing, teaching and more.",
+      },
+    },
+    {
+      year: { uk: "2025", en: "2025" },
+      title: { uk: "Нові диякони і 20 років", en: "New deacons and 20 years" },
+      body: {
+        uk: "Влітку церква обрала на дияконське служіння двох братів, Севастяна Усенка і Давида Мараренка. Після річного випробувального терміну церква планує рукопокласти їх на служіння. А 21 вересня церква відсвяткувала 20-ту річницю разом зі Святом Жнив.",
+        en: "In the summer the church chose two brothers, Sevastian Usenko and David Mararenko, for the ministry of deacon. After a one-year probation, the church plans to ordain them. Then on September 21 the church celebrated its 20th anniversary together with the Harvest Festival.",
+      },
+      link: {
+        href: "/news/20th-anniversary-recap-2025",
+        label: { uk: "Про святкування 20-річчя", en: "About the 20th-anniversary celebration" },
+      },
+    },
+    {
+      year: { uk: "Сьогодні", en: "Today" },
+      title: { uk: "Церква живе", en: "A living church" },
+      body: {
+        uk: "Пастор Леонід і вся церква передають пасторське служіння молодому пастору Віктору Щипайлу, який до того ніс служіння пастора в Першій українській євангельсько-баптистській церкві Філадельфії. Богослужіння звершуються щонеділі, у вівторок ми збираємось на молитву, а в четвер вивчаємо Біблію в Zoom разом із гостями з України та інших міст Америки. Щонеділі співає хор, читається поезія і лунає спів музичних груп. Працюють українська та недільна школи, кожного літа проходить денний християнський табір «Джерельце», а хрещення по вірі звершуються майже щороку. Сьогодні церква налічує 60 членів.",
+        en: "Pastor Leonid and the whole church are handing the pastoral ministry on to a younger pastor, Viktor Shchypailo, who previously served as pastor of the First Ukrainian Evangelical Baptist Church of Philadelphia. We worship every Sunday, pray together on Tuesdays and study the Bible on Zoom on Thursdays, joined by guests from Ukraine and other American cities. A choir sings every Sunday, alongside poetry and music groups. We have a Ukrainian school and a Sunday school, a Christian day camp called Dzherelce every summer, and baptisms by faith almost every year. Today the church has 60 members.",
+      },
+    },
+    {
+      year: { uk: "Далі", en: "Next" },
+      title: { uk: "Власний дім молитви", en: "A house of prayer of our own" },
+      body: {
+        uk: "Зараз ми орендуємо приміщення і збираємо кошти на власну будівлю.",
+        en: "We rent our space today and are raising funds for a building of our own.",
+      },
+      link: {
+        href: "/give",
+        label: { uk: "Пожертвувати на будівлю", en: "Give toward the building" },
+      },
+    },
+  ] as { year: Bi; title: Bi; body: Bi; link?: { href: string; label: Bi } }[],
+  visitTitle: { uk: "Приходьте в неділю", en: "Come on Sunday" } satisfies Bi,
+  visitBody: {
+    uk: "Богослужіння щонеділі о 14:00 за адресою 1460 Eden Rd, Ланкастер. Приходьте такими, як ви є.",
+    en: "Worship every Sunday at 2 PM at 1460 Eden Rd, Lancaster. Come as you are.",
+  } satisfies Bi,
+};

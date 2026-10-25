@@ -29,7 +29,7 @@ import { posts } from "../../../content/posts";
 const mosaicPhotos = [
   { src: "/photos/womens-retreat-2023.jpg", alt: { uk: "Жіночий реколекції «Закохана в Слово»", en: "The “In Love with the Word” women's retreat" } },
   { src: "/photos/news/baptism-2025/hero.jpg", alt: { uk: "Водне хрещення", en: "Water baptism" } },
-  { src: "/photos/camp-group-2023.jpg", alt: { uk: "Табірна громада разом на галявині", en: "The camp community together on the field" } },
+  { src: "/photos/camp-group-2023.jpg", alt: { uk: "Табір разом на галявині", en: "The camp community together on the field" } },
   { src: "/photos/camp-vbs-2023.jpg", alt: { uk: "Дитячий табір за біблійною тематикою", en: "Bible-themed kids camp" } },
   { src: "/photos/news/sisters-christmas-workshop-2025/2.jpeg", alt: { uk: "Сестринське служіння", en: "Women's ministry" } },
   { src: "/photos/news/new-year-2026/hero.jpg", alt: { uk: "Новорічна зустріч церкви", en: "Church New Year's gathering" } },
@@ -166,7 +166,7 @@ export default async function HomePage({
               src="/photos/pastors.jpg"
               alt={
                 locale === "uk"
-                  ? "Наші пастори отримують квіти від громади"
+                  ? "Наші пастори отримують квіти від церкви"
                   : "Our pastors receiving flowers from the congregation"
               }
               fill
@@ -228,7 +228,7 @@ export default async function HomePage({
           {locale === "uk" ? "У КАДРІ" : "IN FRAME"}
         </p>
         <h2 className="mt-2 font-display text-3xl font-semibold text-ink sm:text-4xl">
-          {locale === "uk" ? "Життя нашої громади" : "Our community, in photos"}
+          {locale === "uk" ? "Життя нашої церкви" : "Our community, in photos"}
         </h2>
         <PhotoMosaic photos={mosaicPhotos} locale={locale} className="mt-8" />
       </section>

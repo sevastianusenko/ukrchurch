@@ -31,7 +31,7 @@ export default async function MinistriesPage({
         </h1>
         <p className="mt-4 max-w-xl text-charcoal/70">
           {locale === "uk"
-            ? "Від недільного богослужіння до вівторкової молитви: ось де наша громада живе разом протягом тижня."
+            ? "Від недільного богослужіння до вівторкової молитви: ось де наша церква живе разом протягом тижня."
             : "From Sunday worship to Tuesday prayer: here's where our congregation lives life together through the week."}
         </p>
       </section>

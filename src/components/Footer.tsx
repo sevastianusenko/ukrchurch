@@ -64,6 +64,9 @@ export default function Footer({ locale }: { locale: Locale }) {
             <Link href={`${base}/calendar`} className="hover:text-wheat">
               {ui.nav.calendar[locale]}
             </Link>
+            <Link href={`${base}/library`} className="hover:text-wheat">
+              {ui.nav.library[locale]}
+            </Link>
             <Link href={`${base}/give`} className="hover:text-wheat">
               {ui.nav.give[locale]}
             </Link>

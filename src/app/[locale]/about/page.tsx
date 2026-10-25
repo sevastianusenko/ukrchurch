@@ -8,8 +8,7 @@ import {
   affiliation,
   pastors,
   pastorsEn,
-  foundingYear,
-  anniversaryEvent,
+  aboutPage,
   verse,
   statementOfFaith,
   ui,
@@ -153,8 +152,8 @@ export default async function AboutPage({
             </h2>
             <p className="mt-3 max-w-xl text-charcoal/75">
               {locale === "uk"
-                ? "Прізвища та служіння кожного ще будуть додані. Завітайте в неділю і познайомтесь особисто."
-                : "Each pastor's surname and role are still to come. Come by on a Sunday and meet them in person."}
+                ? "Служіння кожного та прізвище пастора Кирила ще будуть додані. Завітайте в неділю і познайомтесь особисто."
+                : "Each pastor's role, and Pastor Kyrylo's surname, are still to come. Come by on a Sunday and meet them in person."}
             </p>
           </div>
         </div>
@@ -162,22 +161,44 @@ export default async function AboutPage({
 
       <RushnykDivider tone="ink" />
 
-      <section className="bg-ink py-16 text-center sm:py-20">
-        <div className="mx-auto max-w-2xl px-5">
-          <h2 className="font-display text-2xl font-semibold text-wheat sm:text-3xl">
-            {locale === "uk" ? "Наша історія" : "Our History"}
-          </h2>
-          <p className="mt-4 text-wheat/75">
-            {locale === "uk"
-              ? `Церква служить українській громаді Ланкастера з ${foundingYear} року. `
-              : `The church has served Lancaster's Ukrainian community since ${foundingYear}. `}
-            {anniversaryEvent[locale]}
+      {/* History timeline, from the church's own written history */}
+      <section id="history" className="scroll-mt-20 bg-ink py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <p className="font-body text-xs font-bold tracking-[0.15em] text-amber-soft">
+            {aboutPage.historyEyebrow[locale]}
           </p>
+          <h2 className="mt-2 font-display text-2xl font-semibold text-wheat sm:text-3xl">
+            {aboutPage.historyTitle[locale]}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-wheat/80">{aboutPage.historyLead[locale]}</p>
+
+          <ol className="mt-12 border-l border-wheat/15">
+            {aboutPage.history.map((entry) => (
+              <li key={entry.title.en} className="relative pb-12 pl-7 last:pb-0 sm:pl-10">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-amber ring-4 ring-ink"
+                />
+                <p className="font-display text-sm font-semibold tracking-wide text-amber-soft">{entry.year[locale]}</p>
+                <h3 className="mt-1 font-display text-lg font-semibold text-wheat sm:text-xl">{entry.title[locale]}</h3>
+                <p className="mt-3 leading-relaxed text-wheat/75">{entry.body[locale]}</p>
+                {entry.link && (
+                  <Link
+                    href={`/${locale}${entry.link.href}`}
+                    className="mt-3 inline-flex min-h-11 items-center text-sm font-semibold text-amber-soft underline decoration-2 underline-offset-4 hover:text-wheat"
+                  >
+                    {entry.link.label[locale]}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ol>
+
           <Link
-            href={`/${locale}/news/20th-anniversary-recap-2025`}
-            className="mt-6 inline-block text-sm font-semibold text-amber-soft underline decoration-2 underline-offset-4"
+            href={`/${locale}/library/church-history-2025`}
+            className="mt-12 inline-flex min-h-11 items-center rounded-full bg-amber px-6 text-sm font-semibold text-ink transition-colors hover:bg-amber-soft"
           >
-            {locale === "uk" ? "Читати про святкування 20-річчя" : "Read about the 20th-anniversary celebration"}
+            {aboutPage.historyReadFull[locale]}
           </Link>
         </div>
       </section>

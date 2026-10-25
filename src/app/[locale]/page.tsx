@@ -23,6 +23,7 @@ import ServiceTimesCard from "../../components/ServiceTimesCard";
 import MinistryCard from "../../components/MinistryCard";
 import PostCard from "../../components/PostCard";
 import PhotoMosaic from "../../components/PhotoMosaic";
+import HeroPhotoWall from "../../components/HeroPhotoWall";
 import { formatDate } from "../../components/PostCard";
 import { posts } from "../../../content/posts";
 
@@ -52,32 +53,15 @@ export default async function HomePage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="relative h-[86vh] min-h-[560px] w-full sm:h-[92vh]">
-          <Image
-            src="/photos/hero.jpg"
-            alt={
-              locale === "uk"
-                ? "Пшеничне поле на заході сонця"
-                : "A wheat field at sunset"
-            }
-            fill
-            priority
-            sizes="100vw"
-            className="hero-photo object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/10" />
+      <section className="relative overflow-hidden bg-ink">
+        <div className="relative min-h-[640px] w-full md:h-[92vh] md:min-h-[600px]">
+          <HeroPhotoWall />
+          {/* An even veil over the whole wall, then darker toward the text:
+              the bottom on phones, the left side from md up. */}
+          <div className="absolute inset-0 bg-ink/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink from-25% via-ink/70 via-50% to-transparent md:bg-gradient-to-r md:from-ink/90 md:from-0% md:via-ink/60 md:via-45% md:to-transparent md:to-90%" />
 
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Harvest_Season_(220341233).jpeg"
-            target="_blank"
-            rel="noreferrer"
-            className="absolute right-3 top-3 z-10 text-[10px] text-wheat/50 hover:text-wheat/80"
-          >
-            Photo: Christoph Wurst / Wikimedia Commons (CC BY-SA 3.0)
-          </a>
-
-          <div className="relative mx-auto flex h-full max-w-6xl flex-col justify-end gap-8 px-5 pb-14 sm:pb-20">
+          <div className="relative mx-auto flex min-h-[640px] max-w-6xl flex-col justify-end gap-8 px-5 pb-12 pt-[26vh] md:h-full md:min-h-0 md:pb-16 md:pt-0">
             <div className="max-w-2xl">
               <p className="font-body text-xs font-bold tracking-[0.15em] text-amber-soft">
                 {site.shortName[locale]} · LANCASTER, PA
@@ -104,9 +88,8 @@ export default async function HomePage({
               </div>
             </div>
 
-            <div className="sm:absolute sm:bottom-14 sm:right-5">
-              <ServiceTimesCard locale={locale} />
-            </div>
+            {/* In the text column, so it never covers the photo wall. */}
+            <ServiceTimesCard locale={locale} />
           </div>
         </div>
       </section>

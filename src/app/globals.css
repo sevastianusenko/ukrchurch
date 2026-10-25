@@ -61,6 +61,24 @@
   .hero-photo {
     animation: hero-in 0.7s ease-out both;
   }
+  /* Home hero photo wall: each row slides by one copy of its photos and
+     loops; alternate rows run in reverse. Duration and delay are inline. */
+  .photo-wall-row {
+    animation: wall-slide linear infinite;
+    will-change: transform;
+  }
+  .photo-wall-row--reverse {
+    animation-direction: reverse;
+  }
+}
+
+@keyframes wall-slide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 html {

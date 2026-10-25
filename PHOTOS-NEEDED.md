@@ -14,7 +14,24 @@ Last updated: 2026-09-13. Source: StockSnap.io (CC0 / public domain, no
 attribution legally required — original StockSnap URLs kept below for
 traceability only).
 
-**Home hero — went through three versions 2026-09-13.** Stock wheat →
+**Home hero — now a wall of real photos (2026-10-24).** At the client's
+request ("a collage of lots of our photos, smaller, moving diagonally")
+the hero background is a tilted wall of 58 small tiles that drift slowly
+in alternating directions (`src/components/HeroPhotoWall.tsx`, list in
+`content/church.ts` → `heroWallPhotos`). Every tile is a 320×224 crop in
+`public/photos/hero/` of a real photo of this church already in
+`public/photos/` (News posts, `about/`, `фото української церкви/`, and
+the real ministry photos). Deliberately left out: flyers and posters, the
+stock images in the table below, the generic harvest-cart photo on the
+20th-anniversary post, the two kids-camp soccer shots the client rejected
+for the hero before ("не наше"), the newborn's photo, and exact
+duplicates. No stock is used in the hero any more, so the wheat field
+below (`public/photos/hero.jpg`) is unused and no longer needs its
+attribution on the page; the file is kept in case the client wants it
+back. When new real photos arrive, crop them to 320×224 into
+`public/photos/hero/` and add them to `heroWallPhotos`.
+
+**Previous home hero — went through three versions 2026-09-13.** Stock wheat →
 `bake-sale-recap-2025`'s real photo → real kids-camp soccer photo (too
 "not ours," per the client) → **back to a wheat field, but a genuinely
 high-quality one** this time: "Harvest Season" by Christoph Wurst, via

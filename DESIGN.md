@@ -113,6 +113,14 @@ element; motion budget is spent elsewhere).
 - Hero: single orchestrated load-in (photo scale-in 1.04→1 + text fade/rise,
   ~600ms, one time only) — not scattered per-element fades down the page.
   Skip entirely under `prefers-reduced-motion`.
+  - Home hero only (client request 2026-10-24): the background is a wall
+    of many small real photos, tilted −12°, whose rows drift slowly and
+    continuously (90–135 s per loop), alternate rows in opposite
+    directions, so photos move diagonally both ways. It sits under an
+    `ink` veil dark enough for `wheat` text (heavier toward the text:
+    bottom on phones, left from `md`). This is the one place continuous
+    motion is allowed; it stops completely under `prefers-reduced-motion`
+    (the wall stays, static).
   - Section reveals: a small opacity/translate-y on scroll-into-view,
   applied once, subtle (8px, 400ms) — not a showcase.
 - Ministry cards: gentle scale on hover (1.0→1.02) + image zoom, desktop

@@ -105,12 +105,14 @@ export const schedule: ScheduleItem[] = [
   },
 ];
 
-// Real embed URL supplied by the client 2026-09-13. Note its timezone is
-// America/Indiana/Vincennes (an Eastern-observing zone), not
-// America/New_York — passed through as given, not corrected.
+// Real embed URL supplied by the client 2026-09-13 (a public calendar,
+// "Ukrainian Church in Lancaster - Calendar"). It came with
+// ctz=America/Indiana/Vincennes, which shows "Vincennes, Indiana" under the
+// calendar; GoogleCalendarEmbed sets America/New_York (Lancaster's own
+// zone, same clock time) along with the view and language options.
 export const googleCalendar: { embedUrl: string | null } = {
   embedUrl:
-    "https://calendar.google.com/calendar/embed?src=ea3f3b5604b8d55a7b9bc546da9d359c38d522fbf2fa690a43eda888b759aa90%40group.calendar.google.com&ctz=America%2FIndiana%2FVincennes",
+    "https://calendar.google.com/calendar/embed?src=ea3f3b5604b8d55a7b9bc546da9d359c38d522fbf2fa690a43eda888b759aa90%40group.calendar.google.com",
 };
 
 export type UpcomingEvent = {

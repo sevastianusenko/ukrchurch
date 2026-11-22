@@ -1,14 +1,12 @@
 import type { Locale } from "../../content/church";
 import PhotoPlaceholder from "./PhotoPlaceholder";
 
-// Opens on the Agenda (upcoming events list) rather than Google's default
-// month grid: the church adds events months ahead, so the current month is
-// often empty and the grid looked like "no calendar". Visitors can still
-// switch to Week/Month with the tabs. Google's own UI follows the site
-// language, and the title/print/calendar-list/timezone chrome is hidden.
+// Opens on the whole month (client's choice, 2026-11-22, after briefly
+// trying the Agenda list). Google's own UI follows the site language, and
+// the title/print/calendar-list/timezone chrome is hidden.
 function withOptions(embedUrl: string, locale: Locale) {
   const url = new URL(embedUrl);
-  url.searchParams.set("mode", "AGENDA");
+  url.searchParams.set("mode", "MONTH");
   url.searchParams.set("hl", locale);
   url.searchParams.set("ctz", "America/New_York");
   url.searchParams.set("wkst", "1");

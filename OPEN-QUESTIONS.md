@@ -98,9 +98,11 @@ written history now in hand, see #3)
    name) rather than `America/New_York` — passed through as given.
    **2026-11-22:** client reported "no calendar": the embed opened on the
    month grid and November had no events (they're entered from December
-   on). The embed now opens on the Agenda list in the site's language,
-   with `ctz=America/New_York` and Google's title/print/timezone chrome
-   hidden (`GoogleCalendarEmbed.tsx`).
+   on). The embed was switched to the Agenda list, then back to the month
+   grid the same day at the client's request ("пускай весь месяц
+   отображается"). It keeps the site's language, `ctz=America/New_York`
+   and hides Google's title/print/timezone chrome
+   (`GoogleCalendarEmbed.tsx`).
 8. **Harvest Festival 2026 — added, client confirmed 2026-09-13.** The
    flyer found at `Downloads/запрошення на свято жнив 2026.png` (20
    вересня, 11:00, 225 Woodcrest Dr, Ephrata, PA 17522) is now a real News

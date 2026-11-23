@@ -103,6 +103,12 @@ written history now in hand, see #3)
    отображается"). It keeps the site's language, `ctz=America/New_York`
    and hides Google's title/print/timezone chrome
    (`GoogleCalendarEmbed.tsx`).
+   **2026-11-23:** client asked that visitors can add the calendar to their
+   own. Under the embed: "Add to Google Calendar" (Google's `?cid=` link)
+   and "Add to iPhone / Outlook" (`webcal://` subscription to the public
+   iCal feed). Both are built from the embed's `src` calendar ID; text is
+   `content/church.ts` → `calendarSubscribe`. The calendar must stay
+   public for these to work.
 8. **Harvest Festival 2026 — added, client confirmed 2026-09-13.** The
    flyer found at `Downloads/запрошення на свято жнив 2026.png` (20
    вересня, 11:00, 225 Woodcrest Dr, Ephrata, PA 17522) is now a real News

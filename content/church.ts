@@ -115,6 +115,19 @@ export const googleCalendar: { embedUrl: string | null } = {
     "https://calendar.google.com/calendar/embed?src=ea3f3b5604b8d55a7b9bc546da9d359c38d522fbf2fa690a43eda888b759aa90%40group.calendar.google.com",
 };
 
+// "Add it to your own calendar" strip under the embed (client request
+// 2026-11-23). Both buttons subscribe to the same public calendar, so new
+// events show up for subscribers without them doing anything again.
+export const calendarSubscribe = {
+  title: { uk: "Додайте календар собі", en: "Add it to your calendar" },
+  lead: {
+    uk: "Події церкви з'являтимуться у вашому телефоні поруч з вашими власними, а нові додаватимуться самі.",
+    en: "Church events will show up on your phone next to your own, and new ones will appear on their own.",
+  },
+  google: { uk: "Додати в Google Календар", en: "Add to Google Calendar" },
+  apple: { uk: "Додати в iPhone / Outlook", en: "Add to iPhone / Outlook" },
+} satisfies Record<string, Bi>;
+
 export type UpcomingEvent = {
   date: string; // ISO date
   time: string;
